@@ -1,0 +1,112 @@
+#header {
+  .nav-bar {
+    border-bottom: 0.1rem solid $color-primary;
+    background-color: rgba($color-primary-dark, 0.5);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    min-width: 100%;
+    z-index: 1000;
+    .logo {
+      padding: 1.3rem 0 0 2.5rem;
+    }
+    .nav {
+      ul {
+        display: flex;
+        padding: 1.5rem 2.5rem;
+        li {
+          list-style: none;
+          margin: 0 1.5rem;
+          a {
+            font-size: $p;
+            color: $color-primary;
+            text-decoration: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .hero-section {
+    background: linear-gradient(
+        0deg,
+        rgba($color-primary-dark, 0.4),
+        rgba($color-primary-dark, 0.4)
+      ),
+      url('http://abwtechnologies.com/images/stars-bg.jpg') center center
+        no-repeat;
+    background-size: cover;
+    height: 100vh;
+    flex-direction: column;
+
+    .u-wrapper {
+      margin-bottom: 4rem;
+      .left-side {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        img {
+          max-width: 65%;
+        }
+        h1 {
+          color: $color-white;
+          font-size: 2.4rem;
+          padding: 1.2rem 0 0rem;
+          font-weight: 400;
+        }
+        p {
+          color: $color-primary;
+          font-size: $p;
+          text-align: left;
+          line-height: 1.8;
+          font-weight: 100;
+        }
+      }
+    }
+    .right-side {
+      background-color: rgba($color-primary-dark, 0.5);
+      padding: 1.5rem;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        color: $color-white;
+        margin: 1rem 0 0 0;
+        font-size: $p;
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+        &:hover {
+          .button {
+            color: $color-white;
+            background: $color-secondary-light;
+            transition: background-color 0.5s ease-in-out 0s,
+              color 0.5s ease-in-out 0s;
+          }
+        }
+        .button {
+          margin: 2rem 0;
+          align-self: center;
+          padding: 0.2rem 15rem;
+          color: $color-secondary-light;
+          font-size: $p;
+          border: $color-secondary-light 0.1rem solid;
+          border-radius: 0.3rem;
+          transition: background-color 0.5s ease-in-out 0s,
+            color 0.5s ease-in-out 0s;
+        }
+      }
+    }
+    .fa-chevron-down {
+      color: $color-primary;
+      font-size: 4em;
+      // transform: rotate(-90deg);
+    }
+  }
+}

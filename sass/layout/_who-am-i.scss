@@ -1,0 +1,59 @@
+#who-am-i {
+  background: $color-primary-light;
+  padding: 10rem 0;
+  .wrapper {
+    .left-side {
+      //   background: blue;
+      margin: 0 0.5rem 0 0;
+      h2 {
+        font-size: $h2;
+        border-bottom: 0.1rem solid $color-white;
+        max-width: 32rem;
+        font-weight: 100;
+        color: $color-primary-dark;
+      }
+      .first-p {
+        margin-top: 1rem;
+        font-size: $p;
+        color: $color-primary-dark;
+      }
+      .second-p {
+        margin-top: 0.5rem;
+        font-size: 1.4rem;
+        color: $color-primary-dark;
+      }
+      a {
+        color: $color-primary;
+        text-decoration: none;
+        cursor: pointer;
+        transition: color 0.5s ease-in-out;
+
+        &:hover {
+          color: $color-secondary-dark;
+          transition: color 0.5s ease-in-out;
+          .button {
+            background: none;
+            transition: background-color 0.5s ease-in-out;
+          }
+        }
+        .button {
+          margin-top: 1rem;
+          background: $color-secondary-dark;
+          // display: inline-flex;
+          padding: 0.6rem;
+          width: 50%;
+          text-align: center;
+          border: 0.1rem solid $color-secondary-dark;
+          border-radius: 0.3rem;
+          font-size: $p;
+          transition: background-color 0.5s ease-in-out;
+        }
+      }
+    }
+    .right-side {
+      border: 0.5rem $color-secondary-dark solid;
+      margin: 0 0 0 0.5rem;
+      border-radius: 1rem;
+    }
+  }
+}

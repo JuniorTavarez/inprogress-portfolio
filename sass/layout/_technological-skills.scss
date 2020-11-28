@@ -1,0 +1,121 @@
+#technological-skills {
+  background: $color-primary-light;
+  padding: 10rem 0;
+  .wrapper {
+    display: flex;
+
+    justify-content: center;
+    flex-wrap: wrap;
+    h2 {
+      max-width: 32rem;
+      font-size: $h2;
+      border-bottom: 0.1rem solid $color-white;
+      font-weight: 100;
+      color: $color-primary-dark;
+      text-align: center;
+      //   margin: 0 auto;  ``
+      flex: 0 0 100%;
+    }
+    .main-paragraph {
+      margin: 1rem;
+      font-size: $p;
+      flex: 0 0 100%;
+      text-align: center;
+    }
+    .html {
+      flex: 0 0 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1rem;
+      p {
+        flex: 0 1 32%;
+        text-align: center;
+        font-size: $p;
+        background: $color-secondary-dark;
+        border: 0.1rem solid $color-secondary-dark;
+        border-radius: 0.3rem;
+        padding: 0.5rem 0;
+        color: $color-white;
+        &:not(:first-child) {
+          margin-left: 0.1rem;
+        }
+        &:not(:last-child) {
+          margin-right: 0.1rem;
+        }
+      }
+    }
+    .html {
+      flex: 0 0 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 1rem;
+      p {
+        flex: 0 1 33%;
+        text-align: center;
+        font-size: $p;
+        background: $color-secondary-dark;
+        border: 0.1rem solid $color-secondary-dark;
+        border-radius: 0.3rem;
+        padding: 0.5rem 0;
+        color: $color-white;
+      }
+    }
+    .sass {
+      flex: 0 0 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 2rem;
+      p {
+        flex: 0 1 33%;
+        text-align: center;
+        font-size: $p;
+        background: $color-secondary-dark;
+        border: 0.1rem solid $color-secondary-dark;
+        border-radius: 0.3rem;
+        padding: 0.5rem 0;
+        color: $color-white;
+      }
+    }
+    .react {
+      flex: 0 0 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 2rem;
+      p {
+        flex: 0 1 49.7%;
+        text-align: center;
+        font-size: $p;
+        background: $color-secondary-dark;
+        border: 0.1rem solid $color-secondary-dark;
+        border-radius: 0.3rem;
+        padding: 0.5rem 0;
+        color: $color-white;
+      }
+    }
+    .wordpress {
+      flex: 0 0 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 2rem;
+      p {
+        flex: 0 1 16%;
+        text-align: center;
+        font-size: $p;
+        background: $color-secondary-dark;
+        border: 0.1rem solid $color-secondary-dark;
+        border-radius: 0.3rem;
+        padding: 0.5rem 0;
+        color: $color-white;
+        &:first-child,
+        &:last-child {
+          flex: 0 1 33%;
+        }
+      }
+    }
+  }
+}
