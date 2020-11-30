@@ -1,0 +1,22 @@
+#why-work-with-me {
+  background: $color-primary-light;
+  padding: 10rem 0;
+  .wrapper {
+    // display: flex;
+    // justify-content: center;
+    .top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h2 {
+        max-width: 32rem;
+        font-size: $h2;
+        border-bottom: 0.1rem solid $color-white;
+        font-weight: 100;
+        color: $color-primary-dark;
+        text-align: center;
+        flex: 0 0 100%;
+      }
+    }
+  }
+}

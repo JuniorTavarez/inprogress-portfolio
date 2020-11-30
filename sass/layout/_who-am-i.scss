@@ -2,9 +2,10 @@
   background: $color-primary-light;
   padding: 10rem 0;
   .wrapper {
+    display: flex;
+    justify-content: space-around;
     .left-side {
-      //   background: blue;
-      margin: 0 0.5rem 0 0;
+      flex: 0 1 50%;
       h2 {
         font-size: $h2;
         border-bottom: 0.1rem solid $color-white;
@@ -52,8 +53,15 @@
     }
     .right-side {
       border: 0.5rem $color-secondary-dark solid;
-      margin: 0 0 0 0.5rem;
+      flex: 0 1 50%;
+      // margin: 0 0 0 0.5rem;
       border-radius: 1rem;
+      // flex: 0 1 55rem;
+
+      max-width: 45rem;
+      img {
+        width: 100%;
+      }
     }
   }
 }

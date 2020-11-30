@@ -1,0 +1,43 @@
+#connect {
+  padding: 10rem 0;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    .left-side {
+      h2 {
+        max-width: 32rem;
+        font-size: $h2;
+        border-bottom: 0.1rem solid $color-black;
+        font-weight: 100;
+        color: $color-primary-dark;
+        text-align: left;
+      }
+      p {
+        margin-top: 1rem;
+        font-size: $p;
+      }
+    }
+    .right-side {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & p:not(:last-child) {
+        margin-right: 1rem;
+      }
+      p {
+        border: solid 0.2rem $color-secondary-dark;
+
+        border-radius: 30%;
+
+        i {
+          text-align: center;
+          padding: 1.2rem;
+          font-size: 2rem;
+          min-width: 4.5rem;
+          min-height: 4.5rem;
+        }
+      }
+    }
+  }
+}
