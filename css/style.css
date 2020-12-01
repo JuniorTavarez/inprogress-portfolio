@@ -123,6 +123,9 @@ body {
 .u-side {
   flex: 0 1 50%; }
 
+.u-grow-bullet {
+  padding: 0.3rem !important; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -511,18 +514,20 @@ body {
       justify-content: center;
       text-align: center; }
       #testimonials .wrapper .top h2 {
+        margin: 0 auto;
         max-width: 32rem;
         font-size: 2.8rem;
         border-bottom: 0.1rem solid #000000;
+        font-weight: 100;
         color: #000000;
-        margin: 0 auto; }
+        flex: 0 0 100%; }
       #testimonials .wrapper .top p {
         display: block;
         margin-top: 1rem;
         font-size: 1.2rem; }
     #testimonials .wrapper .content {
       border-left: 0.1rem black solid;
-      margin-top: 1.5rem;
+      margin-top: 2rem;
       flex: 1 1 100%;
       text-align: center;
       display: flex;
@@ -532,3 +537,13 @@ body {
       #testimonials .wrapper .content .paragraph .name {
         margin-top: 0.5rem;
         display: block; }
+    #testimonials .wrapper #bullets {
+      display: flex;
+      align-items: center;
+      justify-content: space-around; }
+      #testimonials .wrapper #bullets .bullets {
+        margin: 1rem 0.5rem 0;
+        background-color: #ff7730;
+        padding: 0.1rem;
+        border: solid 0.3rem #ff7730;
+        border-radius: 50%; }

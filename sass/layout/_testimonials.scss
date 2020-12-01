@@ -11,11 +11,13 @@
       justify-content: center;
       text-align: center;
       h2 {
+        margin: 0 auto;
         max-width: 32rem;
         font-size: $h2;
         border-bottom: 0.1rem solid $color-primary-dark;
+        font-weight: 100;
         color: $color-primary-dark;
-        margin: 0 auto;
+        flex: 0 0 100%;
       }
       p {
         display: block;
@@ -25,7 +27,7 @@
     }
     .content {
       border-left: 0.1rem black solid;
-      margin-top: 1.5rem;
+      margin-top: 2rem;
       flex: 1 1 100%;
 
       text-align: center;
@@ -43,6 +45,18 @@
           margin-top: 0.5rem;
           display: block;
         }
+      }
+    }
+    #bullets {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .bullets {
+        margin: 1rem 0.5rem 0;
+        background-color: $color-secondary-dark;
+        padding: 0.1rem;
+        border: solid 0.3rem $color-secondary-dark;
+        border-radius: 50%;
       }
     }
   }
