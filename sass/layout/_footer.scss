@@ -1,0 +1,52 @@
+#footer {
+  background-color: $color-primary-dark;
+  color: $color-primary;
+  padding: 10rem 0;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    .left-side {
+      flex: 0 1 80%;
+      h2 {
+        font-size: $h2;
+      }
+      p {
+        font-size: $p;
+        margin: 0.5rem 0;
+      }
+      .success {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        li {
+          font-size: 1.2rem;
+          list-style: none;
+        }
+      }
+      .icons {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        max-width: 15rem;
+        font-size: $p;
+        list-style: none;
+        a {
+          color: $color-primary;
+        }
+      }
+    }
+    .right-side {
+      flex: 0 1 18%;
+      h2 {
+        font-size: $h2;
+      }
+      p {
+        margin: 1rem 0;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .last {
+    text-align: center;
+  }
+}

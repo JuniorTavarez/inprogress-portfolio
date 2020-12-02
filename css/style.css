@@ -502,6 +502,46 @@ body {
         #why-work-with-me .wrapper .info-section .card p {
           font-size: 1.2rem; }
 
+#footer {
+  background-color: #000000;
+  color: #f7f7f7;
+  padding: 10rem 0; }
+  #footer .wrapper {
+    display: flex;
+    justify-content: space-between; }
+    #footer .wrapper .left-side {
+      flex: 0 1 80%; }
+      #footer .wrapper .left-side h2 {
+        font-size: 2.8rem; }
+      #footer .wrapper .left-side p {
+        font-size: 1.4rem;
+        margin: 0.5rem 0; }
+      #footer .wrapper .left-side .success {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column; }
+        #footer .wrapper .left-side .success li {
+          font-size: 1.2rem;
+          list-style: none; }
+      #footer .wrapper .left-side .icons {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        max-width: 15rem;
+        font-size: 1.4rem;
+        list-style: none; }
+        #footer .wrapper .left-side .icons a {
+          color: #f7f7f7; }
+    #footer .wrapper .right-side {
+      flex: 0 1 18%; }
+      #footer .wrapper .right-side h2 {
+        font-size: 2.8rem; }
+      #footer .wrapper .right-side p {
+        margin: 1rem 0;
+        font-size: 1.2rem; }
+  #footer .last {
+    text-align: center; }
+
 #testimonials {
   padding: 10rem 0; }
   #testimonials .wrapper {
@@ -547,3 +587,32 @@ body {
         padding: 0.1rem;
         border: solid 0.3rem #ff7730;
         border-radius: 50%; }
+
+#overview {
+  background: #e7e7e7;
+  padding: 10rem 0; }
+  #overview h2 {
+    max-width: 32rem;
+    font-size: 2.8rem;
+    border-bottom: 0.1rem solid #fff;
+    font-weight: 100;
+    color: #000000;
+    text-align: center;
+    flex: 0 0 100%;
+    text-align: center;
+    margin: 0 auto 2rem; }
+  #overview .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    #overview .wrapper p {
+      flex: 0 1 70%; }
+    #overview .wrapper .img {
+      flex: 0 1 30%;
+      display: flex;
+      flex-direction: column; }
+      #overview .wrapper .img img {
+        width: 100%; }
+      #overview .wrapper .img div {
+        display: flex;
+        justify-content: space-around; }
