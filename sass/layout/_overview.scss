@@ -22,6 +22,7 @@
       border-left: solid 0.2rem black;
       height: 100%;
       padding-left: 1rem;
+      font-size: $p;
     }
     .img {
       flex: 0 1 30%;
@@ -37,15 +38,18 @@
 
         justify-content: space-around;
         a {
-          flex: 0 1 40%;
-          padding: 1rem;
-          background: black;
+          color: $color-primary;
+          flex: 0 1 45%;
+          padding: 0.5rem 1.5rem;
+          background: $color-secondary-dark;
           text-align: center;
           text-decoration: none;
-          border: 0.1rem solid black;
+          border: 0.1rem solid $color-secondary-dark;
           border-radius: 0.4rem;
+          font-size: $p;
           i {
             margin-left: 1rem;
+            font-size: $p;
           }
         }
       }

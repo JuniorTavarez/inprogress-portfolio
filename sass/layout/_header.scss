@@ -1,7 +1,7 @@
 #header {
   .nav-bar {
     border-bottom: 0.1rem solid $color-primary;
-    background-color: rgba($color-primary-dark, 0.5);
+    background-color: rgba($color-black, 0.5);
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -30,8 +30,8 @@
   .hero-section {
     background: linear-gradient(
         0deg,
-        rgba($color-primary-dark, 0.4),
-        rgba($color-primary-dark, 0.4)
+        rgba($color-black, 0.4),
+        rgba($color-black, 0.4)
       ),
       url('http://abwtechnologies.com/images/stars-bg.jpg') center center
         no-repeat;
@@ -69,7 +69,7 @@
     }
     .right-side {
       flex: 0 1 40%;
-      background-color: rgba($color-primary-dark, 0.5);
+      background-color: rgba($color-black, 0.5);
       padding: 1.5rem;
       border-radius: 1rem;
       display: flex;
@@ -88,7 +88,7 @@
         &:hover {
           .button {
             color: $color-white;
-            background: $color-secondary-light;
+            background: $color-secondary-dark;
             transition: background-color 0.5s ease-in-out 0s,
               color 0.5s ease-in-out 0s;
           }
@@ -97,9 +97,9 @@
           margin: 2rem 0;
           align-self: center;
           padding: 0.2rem 15rem;
-          color: $color-secondary-light;
+          color: $color-secondary-dark;
           font-size: $p;
-          border: $color-secondary-light 0.1rem solid;
+          border: $color-secondary-dark 0.1rem solid;
           border-radius: 0.3rem;
           transition: background-color 0.5s ease-in-out 0s,
             color 0.5s ease-in-out 0s;
