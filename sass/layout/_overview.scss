@@ -19,6 +19,9 @@
     flex-wrap: wrap;
     p {
       flex: 0 1 70%;
+      border-left: solid 0.2rem black;
+      height: 100%;
+      padding-left: 1rem;
     }
     .img {
       flex: 0 1 30%;
@@ -28,9 +31,23 @@
       img {
         width: 100%;
       }
-      div {
+      .button {
+        margin-top: 2.5rem;
         display: flex;
+
         justify-content: space-around;
+        a {
+          flex: 0 1 40%;
+          padding: 1rem;
+          background: black;
+          text-align: center;
+          text-decoration: none;
+          border: 0.1rem solid black;
+          border-radius: 0.4rem;
+          i {
+            margin-left: 1rem;
+          }
+        }
       }
     }
   }

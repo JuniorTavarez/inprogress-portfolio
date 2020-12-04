@@ -606,13 +606,27 @@ body {
     justify-content: space-between;
     flex-wrap: wrap; }
     #overview .wrapper p {
-      flex: 0 1 70%; }
+      flex: 0 1 70%;
+      border-left: solid 0.2rem black;
+      height: 100%;
+      padding-left: 1rem; }
     #overview .wrapper .img {
       flex: 0 1 30%;
       display: flex;
       flex-direction: column; }
       #overview .wrapper .img img {
         width: 100%; }
-      #overview .wrapper .img div {
+      #overview .wrapper .img .button {
+        margin-top: 2.5rem;
         display: flex;
         justify-content: space-around; }
+        #overview .wrapper .img .button a {
+          flex: 0 1 40%;
+          padding: 1rem;
+          background: black;
+          text-align: center;
+          text-decoration: none;
+          border: 0.1rem solid black;
+          border-radius: 0.4rem; }
+          #overview .wrapper .img .button a i {
+            margin-left: 1rem; }
