@@ -26,10 +26,10 @@ html {
   font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html {
-      font-size: 56.25%; } }
+      font-size: 50%; } }
   @media only screen and (max-width: 44em) {
     html {
-      font-size: 50%; } }
+      font-size: 43.75%; } }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -191,6 +191,7 @@ body {
   #header .hero-section .wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 4rem; }
     #header .hero-section .wrapper .left-side {
       flex: 0 1 40%; }
