@@ -1,6 +1,9 @@
 .container {
   max-width: 110rem;
   margin: 0 auto;
+  @include responsive(tab-land) {
+    max-width: 80%;
+  }
 }
 .u-wrapper-parent {
   display: flex;
@@ -14,6 +17,9 @@
 
 .u-side {
   flex: 0 1 50%;
+}
+.u-display-none {
+  display: none !important;
 }
 
 .u-grow-bullet {
@@ -29,7 +35,7 @@
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
 
-  @include respond(tab-port) {
+  @include responsive(tab-port) {
     margin-bottom: 3rem !important;
   }
 }
@@ -37,7 +43,7 @@
 .u-margin-bottom-big {
   margin-bottom: 8rem !important;
 
-  @include respond(tab-port) {
+  @include responsive(tab-port) {
     margin-bottom: 5rem !important;
   }
 }

@@ -4,7 +4,7 @@
 900 - 1200px:   Tablet landscape
 [1200 - 1800] is where our normal styles apply
 1800px + :      Big desktop
-
+ 
 $breakpoint arguement choices:
 - phone
 - tab-port
@@ -27,7 +27,7 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 44em) {
     html {
       font-size: 50%; } }
   @media only screen and (min-width: 112.5em) {
@@ -87,7 +87,7 @@ body {
   color: transparent;
   letter-spacing: 0.2rem;
   transition: all 0.2s; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 44em) {
     .heading-secondary {
       font-size: 3rem; } }
   @media only screen and (max-width: 37.5em) {
@@ -110,6 +110,9 @@ body {
 .container {
   max-width: 110rem;
   margin: 0 auto; }
+  @media only screen and (max-width: 75em) {
+    .container {
+      max-width: 80%; } }
 
 .u-wrapper-parent {
   display: flex;
@@ -123,6 +126,9 @@ body {
 .u-side {
   flex: 0 1 50%; }
 
+.u-display-none {
+  display: none !important; }
+
 .u-grow-bullet {
   padding: 0.3rem !important; }
 
@@ -134,13 +140,13 @@ body {
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 44em) {
     .u-margin-bottom-medium {
       margin-bottom: 3rem !important; } }
 
 .u-margin-bottom-big {
   margin-bottom: 8rem !important; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 44em) {
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
 
@@ -156,21 +162,23 @@ body {
   display: flex;
   justify-content: space-between;
   position: fixed;
-  min-width: 100%;
+  width: 100%;
   z-index: 1000; }
   #header .nav-bar .logo {
     padding: 1.3rem 0 0 2.5rem; }
-  #header .nav-bar .nav ul {
+  #header .nav-bar .nav .main-nav {
     display: flex;
     padding: 1.5rem 2.5rem; }
-    #header .nav-bar .nav ul li {
+    #header .nav-bar .nav .main-nav li {
       list-style: none;
       margin: 0 1.5rem; }
-      #header .nav-bar .nav ul li a {
+      #header .nav-bar .nav .main-nav li a {
         font-size: 1.4rem;
         color: #f7f7f7;
         text-decoration: none;
         cursor: pointer; }
+  #header .nav-bar .nav .mobile-nav {
+    display: none; }
 
 #header .hero-section {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("http://abwtechnologies.com/images/stars-bg.jpg") center center no-repeat;
@@ -231,6 +239,71 @@ body {
   #header .hero-section .fa-chevron-down {
     color: #f7f7f7;
     font-size: 4em; }
+
+@media only screen and (max-width: 59.38em) {
+  #header .hero-section .wrapper .left-side {
+    flex: 0 1 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    #header .hero-section .wrapper .left-side img {
+      max-width: 100%; }
+    #header .hero-section .wrapper .left-side h1 {
+      font-size: 3rem; }
+    #header .hero-section .wrapper .left-side p {
+      font-size: 2rem;
+      text-align: center;
+      max-width: 75%; }
+      #header .hero-section .wrapper .left-side p .name {
+        display: block; }
+  #header .hero-section .wrapper .right-side {
+    display: none; } }
+
+@media only screen and (max-width: 44em) {
+  #header .nav-bar {
+    flex-direction: row-reverse; }
+    #header .nav-bar .logo {
+      padding: 1.3rem 2.5rem 0 0; }
+    #header .nav-bar .nav .main-nav {
+      display: none; }
+    #header .nav-bar .nav .mobile-nav {
+      position: absolute;
+      top: 5rem;
+      display: flex;
+      padding: 1.5rem 2.5rem;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin-top: 0.9rem;
+      width: 100%; }
+      #header .nav-bar .nav .mobile-nav li {
+        list-style: none;
+        margin: 0 1.5rem; }
+        #header .nav-bar .nav .mobile-nav li a {
+          font-size: 1.8rem;
+          color: #f7f7f7;
+          text-decoration: none;
+          cursor: pointer; }
+    #header .nav-bar .nav .menu-bar {
+      margin: 1.8rem 0 0 4rem;
+      border-top: 0.5rem solid #f7f7f7;
+      border-bottom: 0.5rem solid #f7f7f7;
+      border-radius: 0.1rem;
+      width: 3.5rem;
+      padding: 0.5rem 0;
+      display: flex; }
+      #header .nav-bar .nav .menu-bar::before {
+        border-top: 0.5rem solid #f7f7f7;
+        width: 100%;
+        content: '';
+        border-radius: 0.1rem; }
+  #header .hero-section .wrapper .left-side h1 {
+    font-size: 3rem; }
+  #header .hero-section .wrapper .left-side p {
+    font-size: 2rem;
+    text-align: center; }
+  #header .hero-section .wrapper .right-side {
+    display: none; } }
 
 #who-am-i {
   background: #e7e7e7;
