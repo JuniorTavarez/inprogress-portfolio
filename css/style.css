@@ -457,10 +457,10 @@ body {
       flex: 0 0 100%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      justify-content: space-between; }
       #technological-skills .wrapper .html p {
-        flex: 0 1 32%;
+        flex: 0 1 33%;
         text-align: center;
         font-size: 1.4rem;
         background: #0a1b26;
@@ -472,21 +472,6 @@ body {
           margin-left: 0.1rem; }
         #technological-skills .wrapper .html p:not(:last-child) {
           margin-right: 0.1rem; }
-    #technological-skills .wrapper .html {
-      flex: 0 0 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-top: 1rem; }
-      #technological-skills .wrapper .html p {
-        flex: 0 1 33%;
-        text-align: center;
-        font-size: 1.4rem;
-        background: #0a1b26;
-        border: 0.1rem solid #0a1b26;
-        border-radius: 0.3rem;
-        padding: 0.5rem 0;
-        color: #fff; }
     #technological-skills .wrapper .sass {
       flex: 0 0 100%;
       display: flex;
@@ -580,6 +565,21 @@ body {
           font-size: 2rem;
           min-width: 4.5rem;
           min-height: 4.5rem; }
+  @media only screen and (max-width: 50em) {
+    #connect .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      #connect .wrapper .left-side h2 {
+        text-align: center;
+        margin: 0 auto 1rem; }
+      #connect .wrapper .left-side p {
+        text-align: center;
+        margin: 1rem auto; }
+      #connect .wrapper .right-side p {
+        text-align: center;
+        margin: 1rem auto 0; } }
 
 #why-work-with-me {
   background: #e7e7e7;
@@ -619,6 +619,30 @@ body {
           font-weight: 100; }
         #why-work-with-me .wrapper .info-section .card p {
           font-size: 1.2rem; }
+  @media only screen and (max-width: 44em) {
+    #why-work-with-me .wrapper .top h2 {
+      max-width: 60%;
+      margin: 0 auto; }
+    #why-work-with-me .wrapper .top p {
+      max-width: 60%;
+      margin: 0 auto; }
+    #why-work-with-me .wrapper .info-section {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #why-work-with-me .wrapper .info-section .card {
+        margin: 2rem 0;
+        max-width: 60%;
+        justify-content: center; }
+        #why-work-with-me .wrapper .info-section .card div i {
+          font-size: 3rem;
+          color: #0a1b26; }
+        #why-work-with-me .wrapper .info-section .card h3 {
+          font-size: 2rem;
+          font-weight: 100; }
+        #why-work-with-me .wrapper .info-section .card p {
+          font-size: 1.2rem; } }
 
 #footer {
   background-color: #484848;
@@ -659,6 +683,36 @@ body {
         font-size: 1.2rem; }
   #footer .last {
     text-align: center; }
+  @media only screen and (max-width: 44em) {
+    #footer .wrapper {
+      flex-direction: column; }
+      #footer .wrapper .left-side {
+        text-align: center; }
+        #footer .wrapper .left-side h2 {
+          font-size: 2.8rem; }
+        #footer .wrapper .left-side p {
+          font-size: 1.4rem;
+          margin: 0.5rem 0; }
+        #footer .wrapper .left-side .success {
+          margin-top: 1rem;
+          display: flex;
+          flex-direction: column; }
+          #footer .wrapper .left-side .success li {
+            font-size: 1.2rem;
+            list-style: none; }
+        #footer .wrapper .left-side ul {
+          margin: 0 auto; }
+          #footer .wrapper .left-side ul .icons a {
+            color: #f7f7f7; }
+      #footer .wrapper .right-side {
+        flex: 1 1 100%;
+        text-align: center; }
+        #footer .wrapper .right-side h2 {
+          margin: 1rem 0 0; }
+        #footer .wrapper .right-side p {
+          margin: 0rem; }
+    #footer .last {
+      text-align: center; } }
 
 #testimonials {
   padding: 10rem 0; }

@@ -40,4 +40,33 @@
       }
     }
   }
+
+  @include responsive(tab-port-800) {
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .left-side {
+        h2 {
+          text-align: center;
+          margin: 0 auto 1rem;
+        }
+        p {
+          text-align: center;
+          margin: 1rem auto;
+        }
+      }
+      .right-side {
+        & p:not(:last-child) {
+        }
+        p {
+          text-align: center;
+          margin: 1rem auto 0;
+          i {
+          }
+        }
+      }
+    }
+  }
 }

@@ -48,4 +48,46 @@
       }
     }
   }
+
+  @include responsive(tab-port) {
+    .wrapper {
+      .top {
+        h2 {
+          max-width: 60%;
+          margin: 0 auto;
+        }
+        p {
+          max-width: 60%;
+          margin: 0 auto;
+        }
+      }
+      .info-section {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card {
+          margin: 2rem 0;
+          max-width: 60%;
+
+          justify-content: center;
+
+          div {
+            i {
+              font-size: 3rem;
+              color: $color-secondary-dark;
+            }
+          }
+          h3 {
+            font-size: 2rem;
+            font-weight: 100;
+          }
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
 }
