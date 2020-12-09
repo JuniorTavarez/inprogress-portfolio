@@ -365,6 +365,19 @@ body {
       max-width: 45rem; }
       #who-am-i .wrapper .right-side img {
         width: 100%; }
+  @media only screen and (max-width: 44em) {
+    #who-am-i .wrapper {
+      flex-direction: column;
+      text-align: center; }
+      #who-am-i .wrapper .left-side h2 {
+        margin: 0 auto; }
+      #who-am-i .wrapper .left-side a .button {
+        margin: 0 auto; }
+      #who-am-i .wrapper .right-side {
+        border: none;
+        max-width: 100%; }
+        #who-am-i .wrapper .right-side img {
+          width: 100%; } }
 
 #my-latest-work {
   padding: 10rem 0; }
