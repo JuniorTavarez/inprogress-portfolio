@@ -38,4 +38,50 @@
       }
     }
   }
+  @include responsive(tab-port) {
+    .heading {
+      h2 {
+        text-align: center;
+        margin: 0 auto;
+      }
+      p {
+        text-align: center;
+      }
+    }
+    .row-1 {
+      .card-1 {
+        max-width: 48%;
+        img {
+        }
+        p {
+          border: 0.1rem solid $color-primary-light;
+          border-top: 0rem;
+          padding: 1.5rem;
+          text-align: justify;
+          line-height: 2rem;
+          font-size: $p;
+        }
+      }
+    }
+  }
+  @include responsive(phone) {
+    .heading {
+      h2 {
+      }
+      p {
+      }
+    }
+    .row-1 {
+      .card-1 {
+        max-width: 100%;
+        img {
+        }
+        p {
+          text-align: center;
+          font-size: 2rem;
+          line-height: 2.8rem;
+        }
+      }
+    }
+  }
 }

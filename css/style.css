@@ -410,6 +410,28 @@ body {
         line-height: 2rem;
         font-size: 1.4rem;
         min-height: 11rem; }
+  @media only screen and (max-width: 44em) {
+    #my-latest-work .heading h2 {
+      text-align: center;
+      margin: 0 auto; }
+    #my-latest-work .heading p {
+      text-align: center; }
+    #my-latest-work .row-1 .card-1 {
+      max-width: 48%; }
+      #my-latest-work .row-1 .card-1 p {
+        border: 0.1rem solid #e7e7e7;
+        border-top: 0rem;
+        padding: 1.5rem;
+        text-align: justify;
+        line-height: 2rem;
+        font-size: 1.4rem; } }
+  @media only screen and (max-width: 32.5em) {
+    #my-latest-work .row-1 .card-1 {
+      max-width: 100%; }
+      #my-latest-work .row-1 .card-1 p {
+        text-align: center;
+        font-size: 2rem;
+        line-height: 2.8rem; } }
 
 #technological-skills {
   background: #e7e7e7;
