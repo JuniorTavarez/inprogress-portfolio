@@ -1,8 +1,13 @@
 .container {
   max-width: 110rem;
   margin: 0 auto;
+  // 1200px
   @include responsive(tab-land) {
-    max-width: 80%;
+    max-width: 85%;
+  }
+  // 1000px
+  @include responsive(tab-mid) {
+    max-width: 90%;
   }
 }
 .u-wrapper-parent {

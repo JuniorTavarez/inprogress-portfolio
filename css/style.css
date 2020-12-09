@@ -64,7 +64,7 @@ body {
         animation-delay: 3s;
         animation-iteration-count: 3;
         */ }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 32.5em) {
       .heading-primary--main {
         letter-spacing: 1rem;
         font-family: 5rem; } }
@@ -74,7 +74,7 @@ body {
     font-weight: 700;
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 32.5em) {
       .heading-primary--sub {
         letter-spacing: 0.5rem; } }
 
@@ -90,7 +90,7 @@ body {
   @media only screen and (max-width: 44em) {
     .heading-secondary {
       font-size: 3rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 32.5em) {
     .heading-secondary {
       font-size: 2.5rem; } }
   .heading-secondary:hover {
@@ -112,7 +112,10 @@ body {
   margin: 0 auto; }
   @media only screen and (max-width: 75em) {
     .container {
-      max-width: 80%; } }
+      max-width: 85%; } }
+  @media only screen and (max-width: 62.5em) {
+    .container {
+      max-width: 90%; } }
 
 .u-wrapper-parent {
   display: flex;
@@ -305,6 +308,12 @@ body {
     text-align: center; }
   #header .hero-section .wrapper .right-side {
     display: none; } }
+
+@media only screen and (max-width: 32.5em) {
+  #header .hero-section .wrapper .left-side h1 {
+    font-size: 2.4rem; }
+  #header .hero-section .wrapper .left-side p {
+    font-size: 1.4rem; } }
 
 #who-am-i {
   background: #e7e7e7;

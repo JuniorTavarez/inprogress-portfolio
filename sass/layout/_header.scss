@@ -116,7 +116,7 @@
     }
   }
   // END
-
+  // RESponsive desgin beggins
   // 950px
   @include responsive(tab-small) {
     .hero-section {
@@ -214,6 +214,23 @@
         }
         .right-side {
           display: none;
+        }
+      }
+    }
+  }
+  // 520px
+  @include responsive(phone) {
+    .hero-section {
+      .wrapper {
+        .left-side {
+          img {
+          }
+          h1 {
+            font-size: 2.4rem;
+          }
+          p {
+            font-size: $p;
+          }
         }
       }
     }

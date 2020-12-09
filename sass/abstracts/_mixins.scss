@@ -19,9 +19,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 @mixin responsive($breakpoint) {
   @if $breakpoint == phone {
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 32.5em) {
       @content;
-    } //600px
+    } //520px
   }
   @if $breakpoint == tab-port {
     @media only screen and (max-width: 44em) {
