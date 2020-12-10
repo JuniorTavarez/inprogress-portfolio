@@ -89,6 +89,7 @@
       }
       a {
         text-decoration: none;
+
         &:hover {
           .button {
             color: $color-white;
@@ -101,9 +102,9 @@
           margin: 2rem 0;
           align-self: center;
           padding: 0.2rem 15rem;
-          color: $color-secondary-dark;
+          color: $color-white;
           font-size: $p;
-          border: $color-secondary-dark 0.1rem solid;
+          border: $color-primary 0.1rem solid;
           border-radius: 0.3rem;
           transition: background-color 0.5s ease-in-out 0s,
             color 0.5s ease-in-out 0s;
@@ -116,7 +117,64 @@
     }
   }
   // END
+
   // RESponsive desgin beggins
+  // 1200px
+  @include responsive(tab-land) {
+    .hero-section {
+      .wrapper {
+        .left-side {
+          flex: 0 1 45%;
+          img {
+          }
+          h1 {
+            font-size: 2.1rem;
+          }
+          p {
+            font-size: 1.4rem;
+            .name {
+              display: block;
+            }
+          }
+        }
+        .right-side {
+          flex: 0 1 45%;
+
+          p {
+            font-size: 1.4rem;
+          }
+          .button {
+            padding: 0.2rem 6rem;
+          }
+        }
+      }
+    }
+  }
+
+  // // 1000px
+  // @include responsive(tab-mid) {
+  //   .hero-section {
+  //     .wrapper {
+  //       .left-side {
+  //         background-color: black;
+  //         img {
+  //         }
+  //         h1 {
+  //           // font-size: 2rem;
+  //           // background-color: pink;
+  //         }
+  //         p {
+  //           .name {
+  //           }
+  //         }
+  //       }
+  //       .right-side {
+  //         display: none;
+  //       }
+  //     }
+  //   }
+  // }
+
   // 950px
   @include responsive(tab-small) {
     .hero-section {
@@ -131,10 +189,10 @@
             max-width: 100%;
           }
           h1 {
-            font-size: 2.4rem;
+            font-size: 3.5rem;
           }
           p {
-            font-size: 2rem;
+            font-size: $p-small;
             text-align: center;
             max-width: 75%;
             .name {
@@ -174,7 +232,7 @@
             list-style: none;
             margin: 0 1.5rem;
             a {
-              font-size: 1.8rem;
+              font-size: $p-small;
               color: $color-primary;
               text-decoration: none;
               cursor: pointer;
@@ -217,6 +275,25 @@
       }
     }
   }
+  // 704px
+  @include responsive(tab-port) {
+    .hero-section {
+      .wrapper {
+        .left-side {
+          img {
+          }
+          h1 {
+            font-size: 3rem;
+            background-color: yellow;
+          }
+          p {
+            font-size: $p-small;
+          }
+        }
+      }
+    }
+  }
+
   // 520px
   @include responsive(phone) {
     .hero-section {
@@ -225,10 +302,11 @@
           img {
           }
           h1 {
-            font-size: 2rem;
+            font-size: 1.8rem;
+            background-color: green;
           }
           p {
-            // font-size: $p;
+            font-size: 1.5rem;
           }
         }
       }

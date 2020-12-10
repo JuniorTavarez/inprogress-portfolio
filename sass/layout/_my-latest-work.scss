@@ -44,7 +44,8 @@
         img {
         }
         p {
-          min-height: 8.9rem;
+          min-height: 15.1rem;
+          // background-color: yellow;
         }
       }
     }
@@ -56,7 +57,8 @@
         img {
         }
         p {
-          // min-height: 8.9rem;
+          // min-height: 18rem;
+          // background-color: red;
         }
       }
     }
@@ -68,22 +70,26 @@
         img {
         }
         p {
-          min-height: 8.9rem;
+          min-height: 17.1rem;
+          // background-color: green;
         }
       }
     }
   }
+  // 800px
   @include responsive(tab-port-800) {
     .row-1 {
       .card-1 {
         img {
         }
         p {
-          min-height: 8.9rem;
+          min-height: 14.9rem;
+          background-color: purple;
         }
       }
     }
   }
+  // 704px
   @include responsive(tab-port) {
     .heading {
       h2 {
@@ -102,12 +108,13 @@
         p {
           border: 0.1rem solid $color-primary-light;
           border-top: 0rem;
-          text-align: justify;
           line-height: 2rem;
+          min-height: 11rem;
         }
       }
     }
   }
+  // 520px
   @include responsive(phone) {
     .heading {
       h2 {
@@ -123,7 +130,8 @@
         p {
           text-align: center;
           line-height: 2.8rem;
-          // min-height: 11rem;
+          min-height: 4rem;
+          background-color: orange;
         }
       }
     }
