@@ -55,4 +55,28 @@
       }
     }
   }
+  @include responsive(tab-small) {
+    h2 {
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+
+      p {
+      }
+      .img {
+        margin-top: 2rem;
+        img {
+        }
+        .button {
+          justify-content: space-between;
+          a {
+            padding: 1rem 1.5rem;
+            i {
+            }
+          }
+        }
+      }
+    }
+  }
 }
