@@ -437,8 +437,7 @@ body {
       min-height: 17.1rem; } }
   @media only screen and (max-width: 50em) {
     #my-latest-work .row-1 .card-1 p {
-      min-height: 14.9rem;
-      background-color: purple; } }
+      min-height: 14.9rem; } }
   @media only screen and (max-width: 44em) {
     #my-latest-work .heading h2 {
       text-align: center;
@@ -458,8 +457,7 @@ body {
       #my-latest-work .row-1 .card-1 p {
         text-align: center;
         line-height: 2.8rem;
-        min-height: 4rem;
-        background-color: orange; } }
+        min-height: 4rem; } }
 
 #technological-skills {
   background: #e7e7e7;
