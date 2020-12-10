@@ -49,15 +49,17 @@
     }
   }
 
-  @include responsive(tab-port) {
+  @include responsive(tab-small) {
     .wrapper {
       .top {
         h2 {
-          max-width: 60%;
+          // max-width: 60%;
           margin: 0 auto;
+          // font-size: $h2;
         }
         p {
-          max-width: 60%;
+          // max-width: 60%;
+          font-size: $p;
           margin: 0 auto;
         }
       }
@@ -69,7 +71,7 @@
 
         .card {
           margin: 2rem 0;
-          max-width: 60%;
+          // max-width: 60%;
 
           justify-content: center;
 
@@ -84,7 +86,7 @@
             font-weight: 100;
           }
           p {
-            font-size: 1.2rem;
+            font-size: $p;
           }
         }
       }

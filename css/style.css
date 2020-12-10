@@ -612,12 +612,11 @@ body {
           font-weight: 100; }
         #why-work-with-me .wrapper .info-section .card p {
           font-size: 1.2rem; }
-  @media only screen and (max-width: 44em) {
+  @media only screen and (max-width: 59.38em) {
     #why-work-with-me .wrapper .top h2 {
-      max-width: 60%;
       margin: 0 auto; }
     #why-work-with-me .wrapper .top p {
-      max-width: 60%;
+      font-size: 1.6rem;
       margin: 0 auto; }
     #why-work-with-me .wrapper .info-section {
       margin-top: 3rem;
@@ -626,7 +625,6 @@ body {
       align-items: center; }
       #why-work-with-me .wrapper .info-section .card {
         margin: 2rem 0;
-        max-width: 60%;
         justify-content: center; }
         #why-work-with-me .wrapper .info-section .card div i {
           font-size: 3rem;
@@ -635,7 +633,7 @@ body {
           font-size: 2rem;
           font-weight: 100; }
         #why-work-with-me .wrapper .info-section .card p {
-          font-size: 1.2rem; } }
+          font-size: 1.6rem; } }
 
 #footer {
   background-color: #484848;
