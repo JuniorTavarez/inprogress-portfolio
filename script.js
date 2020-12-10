@@ -7,28 +7,32 @@ menu.addEventListener('click', function () {
 });
 
 // Keeps Box same size
-// const p = document.querySelectorAll('.card-1 p');
-// // console.log(p);
+const p = document.querySelectorAll('.card-1 p');
+// console.log(p);
 
-// const resizes = function () {
-//   //   element.style.height = '0px';
-//   let sum = [];
-//   console.log(sum);
-//   //   sum.splice(0, sum.length);
-//   const run = function () {
-//     p.forEach((element) => {
-//       console.log(element);
-//       console.log(element.clientHeight + '&&&&');
-//       sum.push(element.getBoundingClientRect().height);
-//       console.log(element.getBoundingClientRect());
-//     });
-//   };
-//   run();
-//   const total = Math.max(...sum);
-//   console.log(total + '****');
-//   p.forEach((element) => {
-//     element.style.height = `${total}px`;
-//   });
-// };
-// resizes();
-// window.addEventListener('resize', () => location.reload());
+const resizes = function () {
+  let sum = [];
+
+  const run = function () {
+    p.forEach((element) => {
+      console.log(element.getBoundingClientRect().height);
+      sum.push(element.getBoundingClientRect().height);
+    });
+  };
+  run();
+  const total = Math.max(...sum);
+  console.log(sum);
+  p.forEach((element) => {
+    element.style.minHeight = `${total}px`;
+  });
+};
+// console.log('hello');
+resizes();
+
+// console.log(element);
+window.addEventListener('resize', function () {
+  location.reload();
+  resizes();
+});
+
+// window.addEventListener('click', resizes());
