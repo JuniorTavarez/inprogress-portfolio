@@ -401,7 +401,17 @@ body {
         padding: 1.5rem;
         text-align: justify;
         line-height: 2rem;
-        font-size: 1.6rem; }
+        font-size: 1.6rem;
+        min-height: 11rem; }
+  @media only screen and (max-width: 75em) {
+    #my-latest-work .row-1 .card-1 p {
+      min-height: 8.9rem; } }
+  @media only screen and (max-width: 59.38em) {
+    #my-latest-work .row-1 .card-1 p {
+      min-height: 8.9rem; } }
+  @media only screen and (max-width: 50em) {
+    #my-latest-work .row-1 .card-1 p {
+      min-height: 8.9rem; } }
   @media only screen and (max-width: 44em) {
     #my-latest-work .heading h2 {
       text-align: center;

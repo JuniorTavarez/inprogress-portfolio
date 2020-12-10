@@ -1,6 +1,5 @@
 #my-latest-work {
   padding: 10rem 0;
-
   .heading {
     h2 {
       font-size: $h2;
@@ -34,7 +33,54 @@
         text-align: justify;
         line-height: 2rem;
         font-size: $p;
-        // min-height: 11rem;
+        min-height: 11rem;
+      }
+    }
+  }
+  // 1200px
+  @include responsive(tab-land) {
+    .row-1 {
+      .card-1 {
+        img {
+        }
+        p {
+          min-height: 8.9rem;
+        }
+      }
+    }
+  }
+  // 1000px
+  @include responsive(tab-mid) {
+    .row-1 {
+      .card-1 {
+        img {
+        }
+        p {
+          // min-height: 8.9rem;
+        }
+      }
+    }
+  }
+  // 950px
+  @include responsive(tab-small) {
+    .row-1 {
+      .card-1 {
+        img {
+        }
+        p {
+          min-height: 8.9rem;
+        }
+      }
+    }
+  }
+  @include responsive(tab-port-800) {
+    .row-1 {
+      .card-1 {
+        img {
+        }
+        p {
+          min-height: 8.9rem;
+        }
       }
     }
   }
