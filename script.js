@@ -6,6 +6,12 @@ menu.addEventListener('click', function () {
   nav.classList.toggle('u-display-none');
 });
 
+document.querySelector('body').addEventListener('mouseup', function () {
+  if (nav.classList[nav.classList.length - 1] !== 'u-display-none') {
+    nav.classList.add('u-display-none');
+  }
+});
+
 // // Keeps Box same size
 const p = document.querySelector('.card-1 p');
 
