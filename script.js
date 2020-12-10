@@ -11,19 +11,24 @@ const p = document.querySelectorAll('.card-1 p');
 // console.log(p);
 
 const resizes = function () {
+  //   element.style.height = '0px';
   let sum = [];
-
-  p.forEach((element) => {
-    sum.push(element.clientHeight);
-  });
-
+  console.log(sum);
+  //   sum.splice(0, sum.length);
+  const run = function () {
+    p.forEach((element) => {
+      console.log(element);
+      console.log(element.clientHeight + '&&&&');
+      sum.push(element.getBoundingClientRect().height);
+      console.log(element.getBoundingClientRect());
+    });
+  };
+  run();
   const total = Math.max(...sum);
-  console.log(total);
+  console.log(total + '****');
   p.forEach((element) => {
     element.style.height = `${total}px`;
   });
 };
-
 resizes();
-
-window.addEventListener('resize', () => resizes());
+window.addEventListener('resize', () => location.reload());

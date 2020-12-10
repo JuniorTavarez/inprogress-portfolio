@@ -34,7 +34,7 @@
         text-align: justify;
         line-height: 2rem;
         font-size: $p;
-        min-height: 11rem;
+        // min-height: 11rem;
       }
     }
   }
@@ -56,10 +56,8 @@
         p {
           border: 0.1rem solid $color-primary-light;
           border-top: 0rem;
-          padding: 1.5rem;
           text-align: justify;
           line-height: 2rem;
-          font-size: $p;
         }
       }
     }
@@ -78,8 +76,8 @@
         }
         p {
           text-align: center;
-          font-size: 2rem;
           line-height: 2.8rem;
+          // min-height: 11rem;
         }
       }
     }

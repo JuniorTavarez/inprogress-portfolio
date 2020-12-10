@@ -27,9 +27,6 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 44em) {
-    html {
-      font-size: 43.75%; } }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -176,7 +173,7 @@ body {
       list-style: none;
       margin: 0 1.5rem; }
       #header .nav-bar .nav .main-nav li a {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         color: #f7f7f7;
         text-decoration: none;
         cursor: pointer; }
@@ -207,7 +204,7 @@ body {
         font-weight: 400; }
       #header .hero-section .wrapper .left-side p {
         color: #f7f7f7;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         text-align: left;
         line-height: 1.8;
         font-weight: 100; }
@@ -223,7 +220,7 @@ body {
     #header .hero-section .right-side p {
       color: #fff;
       margin: 1rem 0 0 0;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       text-align: center; }
     #header .hero-section .right-side a {
       text-decoration: none; }
@@ -236,7 +233,7 @@ body {
         align-self: center;
         padding: 0.2rem 15rem;
         color: #0a1b26;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         border: #0a1b26 0.1rem solid;
         border-radius: 0.3rem;
         transition: background-color 0.5s ease-in-out 0s, color 0.5s ease-in-out 0s; }
@@ -313,7 +310,7 @@ body {
   #header .hero-section .wrapper .left-side h1 {
     font-size: 2.4rem; }
   #header .hero-section .wrapper .left-side p {
-    font-size: 1.4rem; } }
+    font-size: 1.6rem; } }
 
 #who-am-i {
   background: #e7e7e7;
@@ -331,7 +328,7 @@ body {
         color: #484848; }
       #who-am-i .wrapper .left-side .first-p {
         margin-top: 1rem;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         color: #484848; }
       #who-am-i .wrapper .left-side .second-p {
         margin-top: 0.5rem;
@@ -356,7 +353,7 @@ body {
           text-align: center;
           border: 0.1rem solid #0a1b26;
           border-radius: 0.3rem;
-          font-size: 1.4rem;
+          font-size: 1.6rem;
           transition: background-color 0.5s ease-in-out; }
     #who-am-i .wrapper .right-side {
       border: 0.5rem #0a1b26 solid;
@@ -389,7 +386,7 @@ body {
     color: #484848; }
   #my-latest-work .heading p {
     margin-top: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #484848; }
   #my-latest-work .row-1 {
     display: flex;
@@ -408,8 +405,7 @@ body {
         padding: 1.5rem;
         text-align: justify;
         line-height: 2rem;
-        font-size: 1.4rem;
-        min-height: 11rem; }
+        font-size: 1.6rem; }
   @media only screen and (max-width: 44em) {
     #my-latest-work .heading h2 {
       text-align: center;
@@ -421,16 +417,13 @@ body {
       #my-latest-work .row-1 .card-1 p {
         border: 0.1rem solid #e7e7e7;
         border-top: 0rem;
-        padding: 1.5rem;
         text-align: justify;
-        line-height: 2rem;
-        font-size: 1.4rem; } }
+        line-height: 2rem; } }
   @media only screen and (max-width: 32.5em) {
     #my-latest-work .row-1 .card-1 {
       max-width: 100%; }
       #my-latest-work .row-1 .card-1 p {
         text-align: center;
-        font-size: 2rem;
         line-height: 2.8rem; } }
 
 #technological-skills {
@@ -450,7 +443,7 @@ body {
       flex: 0 0 100%; }
     #technological-skills .wrapper .main-paragraph {
       margin: 1rem;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       flex: 0 0 100%;
       text-align: center; }
     #technological-skills .wrapper .html {
@@ -462,7 +455,7 @@ body {
       #technological-skills .wrapper .html p {
         flex: 0 1 33%;
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         background: #0a1b26;
         border: 0.1rem solid #0a1b26;
         border-radius: 0.3rem;
@@ -481,7 +474,7 @@ body {
       #technological-skills .wrapper .sass p {
         flex: 0 1 33%;
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         background: #0a1b26;
         border: 0.1rem solid #0a1b26;
         border-radius: 0.3rem;
@@ -496,7 +489,7 @@ body {
       #technological-skills .wrapper .react p {
         flex: 0 1 49.7%;
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         background: #0a1b26;
         border: 0.1rem solid #0a1b26;
         border-radius: 0.3rem;
@@ -511,7 +504,7 @@ body {
       #technological-skills .wrapper .wordpress p {
         flex: 0 1 16%;
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         background: #0a1b26;
         border: 0.1rem solid #0a1b26;
         border-radius: 0.3rem;
@@ -528,7 +521,7 @@ body {
       #technological-skills .wrapper .transform p {
         flex: 0 1 100%;
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         background: #0a1b26;
         border: 0.1rem solid #0a1b26;
         border-radius: 0.3rem;
@@ -549,7 +542,7 @@ body {
       text-align: left; }
     #connect .wrapper .left-side p {
       margin-top: 1rem;
-      font-size: 1.4rem; }
+      font-size: 1.6rem; }
     #connect .wrapper .right-side {
       display: flex;
       align-items: center;
@@ -656,7 +649,7 @@ body {
       #footer .wrapper .left-side h2 {
         font-size: 2.8rem; }
       #footer .wrapper .left-side p {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         margin: 0.5rem 0; }
       #footer .wrapper .left-side .success {
         margin-top: 1rem;
@@ -670,7 +663,7 @@ body {
         display: flex;
         justify-content: space-between;
         max-width: 15rem;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         list-style: none; }
         #footer .wrapper .left-side .icons a {
           color: #f7f7f7; }
@@ -691,7 +684,7 @@ body {
         #footer .wrapper .left-side h2 {
           font-size: 2.8rem; }
         #footer .wrapper .left-side p {
-          font-size: 1.4rem;
+          font-size: 1.6rem;
           margin: 0.5rem 0; }
         #footer .wrapper .left-side .success {
           margin-top: 1rem;
@@ -745,7 +738,7 @@ body {
       display: flex;
       justify-content: center; }
       #testimonials .wrapper .content .paragraph p {
-        font-size: 1.4rem; }
+        font-size: 1.6rem; }
       #testimonials .wrapper .content .paragraph .name {
         margin-top: 0.5rem;
         display: block; }
@@ -802,7 +795,7 @@ body {
   #technologies-used .back-to-projects {
     margin-top: 2rem;
     text-align: center;
-    font-size: 1.4rem; }
+    font-size: 1.6rem; }
     #technologies-used .back-to-projects a {
       text-decoration: none;
       color: #484848; }
@@ -851,7 +844,7 @@ body {
       border-left: solid 0.2rem black;
       height: 100%;
       padding-left: 1rem;
-      font-size: 1.4rem; }
+      font-size: 1.6rem; }
     #overview .wrapper .img {
       flex: 0 1 30%;
       display: flex;
@@ -871,10 +864,10 @@ body {
           text-decoration: none;
           border: 0.1rem solid #0a1b26;
           border-radius: 0.4rem;
-          font-size: 1.4rem; }
+          font-size: 1.6rem; }
           #overview .wrapper .img .button a i {
             margin-left: 1rem;
-            font-size: 1.4rem; }
+            font-size: 1.6rem; }
   @media only screen and (max-width: 59.38em) {
     #overview .wrapper {
       display: flex;
