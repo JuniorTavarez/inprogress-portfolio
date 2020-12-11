@@ -12,71 +12,44 @@ window.addEventListener('mouseup', function (e) {
   }
 });
 
-// // Keeps Box same size
-const p = document.querySelector('.card-1 p');
+window.addEventListener('scroll', function (e) {
+  if (e.target !== menu) {
+    nav.classList.add('u-display-none');
+  }
+});
 
-// const resizes = function () {
-//   let sum = [];
+const testimonialCarouselContainer = document.querySelectorAll('.testimonials');
+const carouselSwitch = document.querySelectorAll('.bullets');
+console.log(carouselSwitch);
 
-//   const run = function () {
-//     p.forEach((element) => {
-//       console.log(element.getBoundingClientRect().height);
-//       sum.push(element.getBoundingClientRect().height);
-//     });
-//   };
-//   run();
-//   const total = Math.max(...sum);
-//   console.log(sum);
-//   p.forEach((element) => {
-//     element.style.minHeight = `${total}px`;
-//   });
-// };
-// // console.log('hello');
-// resizes();
+let carouselCounter = 1;
+showContainer(carouselCounter);
 
-// // console.log(element);
-// window.addEventListener('resize', function () {
-//   location.reload();
-//   resizes();
-// });
-
-const pArray = ['testimonial-1', 'testimonial-2', 'testimonial-3'];
-for (let i = 0; i < pArray.length; i++) {
-  document.querySelector('.testimonial-1').classList.add('u-display-none');
-  document.querySelector('.testimonial-2').classList.add('u-display-none');
-  // document.querySelector('.testimonial-3').classList.add('u-display-none');
+function currentContainer(n) {
+  showContainer((carouselCounter = n));
 }
 
-const testimonial1 = document.querySelector('.testimonial-1');
-const testimonial2 = document.querySelector('.testimonial-2');
-const testimonial3 = document.querySelector('.testimonial-3');
-
-let i = 0; // Start Point
-const images = []; // Images Array
-const time = 3000; // Time Between Switch
-
-// Image List
-images[0] = 'http://lorempixel.com/400/200/animals';
-images[1] = 'http://lorempixel.com/400/200/sports';
-images[2] = 'http://lorempixel.com/400/200/food';
-images[3] = 'http://lorempixel.com/400/200/people';
-
-// Change Image
-function changeImg() {
-  document.slide.src = images[i];
-
-  // Check If Index Is Under Max
-  if (i < images.length - 1) {
-    // Add 1 to Index
-    i++;
-  } else {
-    // Reset Back To O
-    i = 0;
+function showContainer(n) {
+  for (let i = 0; i < testimonialCarouselContainer.length; i++) {
+    testimonialCarouselContainer[i].style.display = 'none';
+    testimonialCarouselContainer[i].classList.remove('fast-fade-in-left');
+    carouselSwitch[i].classList.remove('u-grow-bullet');
   }
 
-  // Run function every x seconds
-  setTimeout('changeImg()', time);
+  if (carouselCounter > testimonialCarouselContainer.length) {
+    carouselCounter = 1;
+  }
+
+  testimonialCarouselContainer[carouselCounter - 1].style.display = 'block';
+
+  carouselSwitch[carouselCounter - 1].classList.add('u-grow-bullet');
+
+  carouselCounter++;
+  setTimeout(showContainer, 10000);
 }
 
-// Run function when page loads
-window.onload = changeImg;
+carouselSwitch.forEach((button, i) => {
+  button.addEventListener('click', () => {
+    currentContainer(i + 1);
+  });
+});
