@@ -130,7 +130,7 @@ body {
   display: none !important; }
 
 .u-grow-bullet {
-  padding: 0.3rem !important; }
+  padding: 0.3rem; }
 
 .u-center-text {
   text-align: center !important; }
@@ -731,8 +731,7 @@ body {
       #testimonials .wrapper #bullets .bullets {
         margin: 1rem 0.5rem 0;
         background-color: #0a1b26;
-        padding: 0.1rem;
-        border: solid 0.3rem #0a1b26;
+        border: solid 0.4rem #0a1b26;
         border-radius: 50%; }
 
 #technologies-used {

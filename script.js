@@ -12,44 +12,39 @@ window.addEventListener('mouseup', function (e) {
   }
 });
 
-window.addEventListener('scroll', function (e) {
-  if (e.target !== menu) {
-    nav.classList.add('u-display-none');
-  }
-});
+const testimonials = document.querySelectorAll('.testimonials');
+const buttons = document.querySelectorAll('.bullets');
 
-const testimonialCarouselContainer = document.querySelectorAll('.testimonials');
-const carouselSwitch = document.querySelectorAll('.bullets');
-console.log(carouselSwitch);
+let num = 0;
+// num into showcontainer
+showContainer();
 
-let carouselCounter = 1;
-showContainer(carouselCounter);
+function showContainer() {
+  // hides everything
 
-function currentContainer(n) {
-  showContainer((carouselCounter = n));
-}
-
-function showContainer(n) {
-  for (let i = 0; i < testimonialCarouselContainer.length; i++) {
-    testimonialCarouselContainer[i].style.display = 'none';
-    testimonialCarouselContainer[i].classList.remove('fast-fade-in-left');
-    carouselSwitch[i].classList.remove('u-grow-bullet');
+  for (let i = 0; i < testimonials.length; i++) {
+    testimonials[i].style.display = 'none';
+    buttons[i].classList.remove('u-grow-bullet');
   }
 
-  if (carouselCounter > testimonialCarouselContainer.length) {
-    carouselCounter = 1;
+  // reset count if greater than testimonials
+  if (num > testimonials.length - 1) {
+    num = 0;
   }
 
-  testimonialCarouselContainer[carouselCounter - 1].style.display = 'block';
+  // displays testimonial
+  testimonials[num].style.display = 'block';
 
-  carouselSwitch[carouselCounter - 1].classList.add('u-grow-bullet');
+  buttons[num].classList.add('u-grow-bullet');
 
-  carouselCounter++;
+  // add 1
+  num++;
   setTimeout(showContainer, 10000);
 }
 
-carouselSwitch.forEach((button, i) => {
+buttons.forEach((button, index) => {
   button.addEventListener('click', () => {
-    currentContainer(i + 1);
+    num = index;
+    showContainer();
   });
 });
