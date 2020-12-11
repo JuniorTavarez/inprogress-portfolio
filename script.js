@@ -6,8 +6,8 @@ menu.addEventListener('click', function () {
   nav.classList.toggle('u-display-none');
 });
 
-document.querySelector('body').addEventListener('mouseup', function () {
-  if (nav.classList[nav.classList.length - 1] !== 'u-display-none') {
+window.addEventListener('mouseup', function (e) {
+  if (e.target !== menu) {
     nav.classList.add('u-display-none');
   }
 });
@@ -39,3 +39,10 @@ const p = document.querySelector('.card-1 p');
 //   location.reload();
 //   resizes();
 // });
+
+const pArray = ['testimonial-1', 'testimonial-2', 'testimonial-3'];
+for (let i = 0; i < pArray.length; i++) {
+  document.querySelector('.testimonial-1').classList.add('u-display-none');
+  document.querySelector('.testimonial-2').classList.add('u-display-none');
+  // document.querySelector('.testimonial-3').classList.add('u-display-none');
+}

@@ -717,11 +717,13 @@ body {
       text-align: center;
       display: flex;
       justify-content: center; }
-      #testimonials .wrapper .content .paragraph p {
-        font-size: 1.6rem; }
-      #testimonials .wrapper .content .paragraph .name {
-        margin-top: 0.5rem;
-        display: block; }
+      #testimonials .wrapper .content .paragraph {
+        margin: 0 0 0 2rem; }
+        #testimonials .wrapper .content .paragraph p {
+          font-size: 1.6rem; }
+        #testimonials .wrapper .content .paragraph .name {
+          margin-top: 0.5rem;
+          display: block; }
     #testimonials .wrapper #bullets {
       display: flex;
       align-items: center;
