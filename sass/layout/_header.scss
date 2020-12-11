@@ -131,6 +131,7 @@
             font-size: 2.1rem;
           }
           p {
+            // max-width: 10%;
             font-size: 1.4rem;
             .name {
               display: block;
@@ -151,30 +152,6 @@
     }
   }
 
-  // // 1000px
-  // @include responsive(tab-mid) {
-  //   .hero-section {
-  //     .wrapper {
-  //       .left-side {
-  //         background-color: black;
-  //         img {
-  //         }
-  //         h1 {
-  //           // font-size: 2rem;
-  //           // background-color: pink;
-  //         }
-  //         p {
-  //           .name {
-  //           }
-  //         }
-  //       }
-  //       .right-side {
-  //         display: none;
-  //       }
-  //     }
-  //   }
-  // }
-
   // 950px
   @include responsive(tab-small) {
     .hero-section {
@@ -194,7 +171,7 @@
           p {
             font-size: $p-small;
             text-align: center;
-            max-width: 75%;
+            max-width: 70%;
             .name {
               display: block;
             }
@@ -206,8 +183,8 @@
       }
     }
   }
-  // 900PX
-  @include responsive(tab-port) {
+  // 800PX
+  @include responsive(tab-port-800) {
     .nav-bar {
       flex-direction: row-reverse;
 
@@ -267,6 +244,7 @@
           p {
             font-size: 2rem;
             text-align: center;
+            max-width: 65%;
           }
         }
         .right-side {
@@ -286,9 +264,11 @@
             font-size: 3rem;
           }
           p {
-            font-size: $p-small;
-            max-width: 80%;
+            font-size: 2rem;
+            max-width: 100%;
           }
+        }
+        .right-side {
         }
       }
     }
@@ -302,11 +282,12 @@
           img {
           }
           h1 {
-            font-size: 1.8rem;
+            font-size: 1.9rem;
           }
           p {
             max-width: 100%;
-            font-size: 1.5rem;
+            font-size: 1.3rem;
+            // background: yellow;
           }
         }
       }

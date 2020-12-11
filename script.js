@@ -12,43 +12,38 @@ window.addEventListener('mouseup', function (e) {
   }
 });
 
-window.addEventListener('scroll', function (e) {
-  if (e.target !== menu) {
-    nav.classList.add('u-display-none');
-  }
-});
+// testimonial animation
 
-const testimonialCarouselContainer = document.querySelectorAll('.testimonials');
-const carouselSwitch = document.querySelectorAll('.bullets');
-console.log(carouselSwitch);
+const testimonials = document.querySelectorAll('.testimonials');
+const button = document.querySelectorAll('.bullets');
+console.log(button);
 
-let carouselCounter = 1;
-showContainer(carouselCounter);
+let num = 1;
+testimonialFunction(num);
 
 function currentContainer(n) {
-  showContainer((carouselCounter = n));
+  testimonialFunction((num = n));
 }
 
-function showContainer(n) {
-  for (let i = 0; i < testimonialCarouselContainer.length; i++) {
-    testimonialCarouselContainer[i].style.display = 'none';
-    testimonialCarouselContainer[i].classList.remove('fast-fade-in-left');
-    carouselSwitch[i].classList.remove('u-grow-bullet');
+function testimonialFunction(n) {
+  for (let i = 0; i < testimonials.length; i++) {
+    testimonials[i].style.display = 'none';
+    button[i].classList.remove('u-grow-bullet');
   }
 
-  if (carouselCounter > testimonialCarouselContainer.length) {
-    carouselCounter = 1;
+  if (num > testimonials.length) {
+    num = 1;
   }
 
-  testimonialCarouselContainer[carouselCounter - 1].style.display = 'block';
+  testimonials[num - 1].style.display = 'block';
 
-  carouselSwitch[carouselCounter - 1].classList.add('u-grow-bullet');
+  button[num - 1].classList.add('u-grow-bullet');
 
-  carouselCounter++;
-  setTimeout(showContainer, 10000);
+  num++;
+  setTimeout(testimonialFunction, 10000);
 }
 
-carouselSwitch.forEach((button, i) => {
+button.forEach((button, i) => {
   button.addEventListener('click', () => {
     currentContainer(i + 1);
   });

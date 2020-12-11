@@ -271,13 +271,13 @@ body {
     #header .hero-section .wrapper .left-side p {
       font-size: 2.4rem;
       text-align: center;
-      max-width: 75%; }
+      max-width: 70%; }
       #header .hero-section .wrapper .left-side p .name {
         display: block; }
   #header .hero-section .wrapper .right-side {
     display: none; } }
 
-@media only screen and (max-width: 44em) {
+@media only screen and (max-width: 50em) {
   #header .nav-bar {
     flex-direction: row-reverse; }
     #header .nav-bar .logo {
@@ -316,7 +316,8 @@ body {
         border-radius: 0.1rem; }
   #header .hero-section .wrapper .left-side p {
     font-size: 2rem;
-    text-align: center; }
+    text-align: center;
+    max-width: 65%; }
   #header .hero-section .wrapper .right-side {
     display: none; } }
 
@@ -324,15 +325,15 @@ body {
   #header .hero-section .wrapper .left-side h1 {
     font-size: 3rem; }
   #header .hero-section .wrapper .left-side p {
-    font-size: 2.4rem;
-    max-width: 80%; } }
+    font-size: 2rem;
+    max-width: 100%; } }
 
 @media only screen and (max-width: 32.5em) {
   #header .hero-section .wrapper .left-side h1 {
-    font-size: 1.8rem; }
+    font-size: 1.9rem; }
   #header .hero-section .wrapper .left-side p {
     max-width: 100%;
-    font-size: 1.5rem; } }
+    font-size: 1.3rem; } }
 
 #who-am-i {
   background: #e7e7e7;
@@ -385,18 +386,27 @@ body {
       #who-am-i .wrapper .right-side img {
         width: 100%; }
   @media only screen and (max-width: 44em) {
-    #who-am-i .wrapper {
-      flex-direction: column;
-      text-align: center; }
-      #who-am-i .wrapper .left-side h2 {
-        margin: 0 auto; }
-      #who-am-i .wrapper .left-side a .button {
-        margin: 0 auto; }
-      #who-am-i .wrapper .right-side {
-        border: none;
-        max-width: 100%; }
-        #who-am-i .wrapper .right-side img {
-          width: 100%; } }
+    #who-am-i {
+      background: #e7e7e7;
+      padding: 5rem 0; }
+      #who-am-i .wrapper {
+        flex-direction: column;
+        text-align: center; }
+        #who-am-i .wrapper .left-side h2 {
+          margin: 0 auto; }
+        #who-am-i .wrapper .left-side .first-p {
+          margin-top: 1.5rem; }
+        #who-am-i .wrapper .left-side .second-p {
+          margin: 1.5rem auto;
+          max-width: 92%;
+          text-align: center; }
+        #who-am-i .wrapper .left-side a .button {
+          margin: 0 auto; }
+        #who-am-i .wrapper .right-side {
+          border: none;
+          max-width: 100%; }
+          #who-am-i .wrapper .right-side img {
+            width: 100%; } }
 
 #my-latest-work {
   padding: 10rem 0; }

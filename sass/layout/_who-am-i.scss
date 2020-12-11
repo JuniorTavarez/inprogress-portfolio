@@ -66,6 +66,8 @@
   }
 
   @include responsive(tab-port) {
+    background: $color-primary-light;
+    padding: 5rem 0;
     .wrapper {
       flex-direction: column;
       text-align: center;
@@ -82,7 +84,7 @@
           // color: $color-primary-dark;
         }
         .first-p {
-          // margin-top: 1rem;
+          margin-top: 1.5rem;
           // font-size: $p;
           // color: $color-primary-dark;
         }
@@ -90,6 +92,9 @@
           // margin-top: 0.5rem;
           // font-size: 1.4rem;
           // color: $color-primary-dark;
+          margin: 1.5rem auto;
+          max-width: 92%;
+          text-align: center;
         }
         a {
           // color: $color-primary;
