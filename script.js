@@ -12,39 +12,35 @@ window.addEventListener('mouseup', function (e) {
   }
 });
 
+// testimonial animation
+
 const testimonials = document.querySelectorAll('.testimonials');
 const buttons = document.querySelectorAll('.bullets');
 
 let num = 0;
-// num into showcontainer
-showContainer();
+testimonialFunction();
 
-function showContainer() {
-  // hides everything
-
+function testimonialFunction() {
   for (let i = 0; i < testimonials.length; i++) {
-    testimonials[i].style.display = 'none';
+    testimonials[i].classList.add('u-display-none');
     buttons[i].classList.remove('u-grow-bullet');
   }
 
-  // reset count if greater than testimonials
   if (num > testimonials.length - 1) {
     num = 0;
   }
 
-  // displays testimonial
-  testimonials[num].style.display = 'block';
+  testimonials[num].classList.remove('u-display-none');
 
   buttons[num].classList.add('u-grow-bullet');
 
-  // add 1
   num++;
-  setTimeout(showContainer, 10000);
+  const timer = setTimeout(testimonialFunction, 20000);
 }
 
 buttons.forEach((button, index) => {
   button.addEventListener('click', () => {
     num = index;
-    showContainer();
+    testimonialFunction();
   });
 });

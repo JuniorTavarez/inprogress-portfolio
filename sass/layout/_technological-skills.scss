@@ -50,32 +50,4 @@
       }
     }
   }
-
-  // phone 520px
-  @include responsive(tab-port) {
-    .wrapper {
-      h2 {
-      }
-      .main-paragraph {
-      }
-      .flex {
-        p {
-          &:nth-last-child(1n + 1) {
-            flex: 0 1 49.5%;
-            // background: blue;
-          }
-          &:last-child {
-            flex: 0 1 100%;
-          }
-
-          &:nth-child(3) {
-            flex: 0 1 74.5%;
-          }
-          &:nth-child(4) {
-            flex: 0 1 24.5%;
-          }
-        }
-      }
-    }
-  }
 }
