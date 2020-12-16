@@ -3,6 +3,11 @@
   .wrapper {
     display: flex;
     justify-content: space-between;
+    @include responsive(phone) {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
     .left-side {
       h2 {
         max-width: 32rem;
@@ -11,10 +16,18 @@
         font-weight: 100;
         color: $color-primary-dark;
         text-align: left;
+        @include responsive(phone) {
+          text-align: center;
+          margin: 0 auto 1rem;
+        }
       }
       p {
         margin-top: 1rem;
         font-size: $p;
+        @include responsive(phone) {
+          text-align: center;
+          margin: 1rem auto;
+        }
       }
     }
     .right-side {
@@ -29,6 +42,10 @@
         border: solid 0.2rem $color-secondary-dark;
 
         border-radius: 30%;
+        @include responsive(phone) {
+          text-align: center;
+          margin: 1rem auto 0;
+        }
 
         i {
           text-align: center;

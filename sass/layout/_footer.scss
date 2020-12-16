@@ -5,8 +5,15 @@
   .wrapper {
     display: flex;
     justify-content: space-between;
+    @include responsive(phone) {
+      flex-direction: column;
+    }
     .left-side {
       flex: 0 1 80%;
+
+      @include responsive(phone) {
+        text-align: center;
+      }
       h2 {
         font-size: $h2;
       }
@@ -23,6 +30,7 @@
           list-style: none;
         }
       }
+
       .icons {
         margin-top: 1rem;
         display: flex;
@@ -30,6 +38,9 @@
         max-width: 15rem;
         font-size: $p;
         list-style: none;
+        @include responsive(phone) {
+          margin: 0 auto;
+        }
         a {
           color: $color-primary;
         }
@@ -37,63 +48,26 @@
     }
     .right-side {
       flex: 0 1 18%;
+      @include responsive(phone) {
+        flex: 1 1 100%;
+        text-align: center;
+      }
       h2 {
         font-size: $h2;
+        @include responsive(phone) {
+          margin: 1rem 0 0;
+        }
       }
       p {
         margin: 1rem 0;
-        font-size: 1.2rem;
+        font-size: $p;
+        @include responsive(phone) {
+          margin: 0rem;
+        }
       }
     }
   }
   .last {
     text-align: center;
-  }
-
-  @include responsive(tab-port) {
-    .wrapper {
-      flex-direction: column;
-      .left-side {
-        text-align: center;
-        h2 {
-          font-size: $h2;
-        }
-        p {
-          font-size: $p;
-          margin: 0.5rem 0;
-        }
-        .success {
-          margin-top: 1rem;
-          display: flex;
-          flex-direction: column;
-          li {
-            font-size: 1.2rem;
-            list-style: none;
-          }
-        }
-        ul {
-          margin: 0 auto;
-          .icons {
-            a {
-              color: $color-primary;
-            }
-          }
-        }
-      }
-
-      .right-side {
-        flex: 1 1 100%;
-        text-align: center;
-        h2 {
-          margin: 1rem 0 0;
-        }
-        p {
-          margin: 0rem;
-        }
-      }
-    }
-    .last {
-      text-align: center;
-    }
   }
 }

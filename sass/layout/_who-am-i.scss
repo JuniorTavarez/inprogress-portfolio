@@ -1,27 +1,47 @@
 #who-am-i {
   background: $color-primary-light;
   padding: 10rem 0;
+  @include responsive(phone) {
+    padding: 5rem 0;
+  }
   .wrapper {
     display: flex;
     justify-content: space-around;
+    @include responsive(phone) {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
     .left-side {
       flex: 0 1 50%;
+
       h2 {
         font-size: $h2;
         border-bottom: 0.1rem solid $color-white;
         max-width: 32rem;
         font-weight: 100;
         color: $color-primary-dark;
+        @include responsive(phone) {
+          margin: 0 auto;
+        }
       }
       .first-p {
         margin-top: 1rem;
         font-size: $p;
         color: $color-primary-dark;
+        @include responsive(phone) {
+          margin-top: 1.5rem;
+        }
       }
       .second-p {
         margin-top: 0.5rem;
         font-size: $p;
         color: $color-primary-dark;
+        @include responsive(phone) {
+          margin: 1.5rem auto;
+          max-width: 92%;
+          text-align: center;
+        }
       }
       a {
         color: $color-primary;
@@ -32,6 +52,7 @@
         &:hover {
           color: $color-secondary-dark;
           transition: color 0.5s ease-in-out;
+
           .button {
             background: none;
             transition: background-color 0.5s ease-in-out;
@@ -40,7 +61,7 @@
         .button {
           margin-top: 1rem;
           background: $color-secondary-dark;
-          // display: inline-flex;
+
           padding: 0.6rem;
           width: 50%;
           text-align: center;
@@ -48,17 +69,23 @@
           border-radius: 0.3rem;
           font-size: $p;
           transition: background-color 0.5s ease-in-out;
+          @include responsive(phone) {
+            margin: 0 auto;
+          }
         }
       }
     }
     .right-side {
       border: 0.5rem $color-secondary-dark solid;
       flex: 0 1 50%;
-      // margin: 0 0 0 0.5rem;
+
       border-radius: 1rem;
-      // flex: 0 1 55rem;
 
       max-width: 45rem;
+
+      @include responsive(phone) {
+        border: none;
+      }
       img {
         width: 100%;
       }
