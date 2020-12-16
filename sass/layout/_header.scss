@@ -11,7 +11,11 @@
       flex-direction: row-reverse;
     }
     .logo {
-      padding: 1.3rem 0 0 2.5rem;
+      padding: 1.5rem 0 0 2.5rem;
+
+      @include responsive(tab-mid) {
+        padding: 1.5rem 1rem 0 1rem;
+      }
 
       @include responsive(phone) {
         padding: 1.3rem 2.5rem 0 0;
@@ -21,12 +25,29 @@
       .main-nav {
         display: flex;
         padding: 1.5rem 2.5rem;
+
+        @include responsive(tab-mid) {
+          padding: 1.5rem 1.5rem 1.5rem 0;
+          font-size: 1.2rem;
+        }
         @include responsive(phone) {
           display: none;
         }
         li {
           list-style: none;
-          margin: 0 1.5rem;
+          margin-right: 1.5rem;
+          &:not(:first-child) {
+            margin-left: 1.5rem;
+          }
+          @include responsive(tab-mid) {
+            margin-right: 0;
+            &:not(:first-child) {
+              margin-left: 1.5rem;
+            }
+            &:nth-child(4) {
+              display: none;
+            }
+          }
           a {
             font-size: $p;
             color: $color-primary;
@@ -41,16 +62,18 @@
           position: absolute;
           top: 5rem;
           display: flex;
-          padding: 1.5rem 2.5rem;
+          padding: 1.5rem 0 1.5rem 2.5rem;
           flex-direction: column;
           background-color: rgba($color-black, 0.5);
-          margin-top: 0.9rem;
+          margin-top: 1.2rem;
           width: 100%;
+
           li {
             list-style: none;
-            margin: 0 1.5rem;
+
             a {
-              font-size: 1.5rem;
+              font-size: 1.8rem;
+
               color: $color-primary;
               text-decoration: none;
               cursor: pointer;
@@ -60,16 +83,16 @@
       }
       @include responsive(phone) {
         .menu-bar {
-          margin: 1.8rem 0 0 2.5rem;
-          border-top: 0.5rem solid $color-primary;
-          border-bottom: 0.5rem solid $color-primary;
+          margin: 1.8rem 0 1.8rem 2.5rem;
+          border-top: 0.4rem solid $color-primary;
+          border-bottom: 0.4rem solid $color-primary;
           border-radius: 0.1rem;
           width: 3.5rem;
           padding: 0.5rem 0;
           display: flex;
 
           &::before {
-            border-top: 0.5rem solid $color-primary;
+            border-top: 0.4rem solid $color-primary;
             width: 100%;
             content: '';
             border-radius: 0.1rem;
@@ -125,6 +148,9 @@
           font-size: $h2;
           font-weight: 400;
 
+          @include responsive(tab-land) {
+            font-size: 2.2rem;
+          }
           @include responsive(phone) {
             text-align: center;
             line-height: 2.5rem;
@@ -137,6 +163,9 @@
           text-align: left;
           line-height: 1.8;
           font-weight: 100;
+          @include responsive(tab-land) {
+            font-size: 1.29rem;
+          }
 
           @include responsive(tab-mid) {
             text-align: center;
