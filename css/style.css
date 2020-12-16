@@ -442,8 +442,6 @@ body {
         line-height: 2rem;
         font-size: 1.6rem;
         min-height: 11rem; }
-<<<<<<< HEAD
-=======
         @media only screen and (max-width: 75em) {
           #my-latest-work .row-1 .card-1 p {
             min-height: 15.1rem; } }
@@ -454,7 +452,6 @@ body {
           #my-latest-work .row-1 .card-1 p {
             min-height: 11rem;
             text-align: center; } }
->>>>>>> ce6e17726f71925f5e0b24530ba93a3e969c955a
 
 #technological-skills {
   background: #e7e7e7;
@@ -497,8 +494,6 @@ body {
           flex: 0 1 49.5%; }
         #technological-skills .wrapper .flex p:nth-child(10), #technological-skills .wrapper .flex p:nth-child(11) {
           flex: 0 1 16%; }
-<<<<<<< HEAD
-=======
         @media only screen and (max-width: 37.5em) {
           #technological-skills .wrapper .flex p:nth-last-child(1n + 1) {
             flex: 0 1 49.5%; }
@@ -508,7 +503,6 @@ body {
             flex: 0 1 74.5%; }
           #technological-skills .wrapper .flex p:nth-child(4) {
             flex: 0 1 24.5%; } }
->>>>>>> ce6e17726f71925f5e0b24530ba93a3e969c955a
 
 #connect {
   padding: 10rem 0; }
@@ -843,192 +837,3 @@ body {
           #overview .wrapper .img .button a i {
             margin-left: 1rem;
             font-size: 1.6rem; }
-<<<<<<< HEAD
-  @media only screen and (max-width: 59.38em) {
-    #overview .wrapper {
-      display: flex;
-      flex-direction: column; }
-      #overview .wrapper .img {
-        margin-top: 2rem; }
-        #overview .wrapper .img .button {
-          justify-content: space-between; }
-          #overview .wrapper .img .button a {
-            padding: 1rem 1.5rem; } }
-
-@media only screen and (max-width: 75em) {
-  .hero-section .wrapper .left-side {
-    flex: 0 1 45%; }
-    .hero-section .wrapper .left-side h1 {
-      font-size: 2.1rem; }
-    .hero-section .wrapper .left-side p {
-      font-size: 1.4rem; }
-      .hero-section .wrapper .left-side p .name {
-        display: block; }
-  .hero-section .wrapper .right-side {
-    flex: 0 1 45%; }
-    .hero-section .wrapper .right-side p {
-      font-size: 1.4rem; }
-    .hero-section .wrapper .right-side .button {
-      padding: 0.2rem 6rem; } }
-
-@media only screen and (max-width: 59.38em) {
-  .hero-section .wrapper .left-side {
-    flex: 0 1 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center; }
-    .hero-section .wrapper .left-side img {
-      max-width: 100%; }
-    .hero-section .wrapper .left-side h1 {
-      font-size: 3.5rem; }
-    .hero-section .wrapper .left-side p {
-      font-size: 2.4rem;
-      text-align: center;
-      max-width: 70%; }
-      .hero-section .wrapper .left-side p .name {
-        display: block; }
-  .hero-section .wrapper .right-side {
-    display: none; } }
-
-@media only screen and (max-width: 50em) {
-  .nav-bar {
-    flex-direction: row-reverse; }
-    .nav-bar .logo {
-      padding: 1.3rem 2.5rem 0 0; }
-    .nav-bar .nav .main-nav {
-      display: none; }
-    .nav-bar .nav .mobile-nav {
-      position: absolute;
-      top: 5rem;
-      display: flex;
-      padding: 1.5rem 2.5rem;
-      flex-direction: column;
-      background-color: rgba(0, 0, 0, 0.5);
-      margin-top: 0.9rem;
-      width: 100%; }
-      .nav-bar .nav .mobile-nav li {
-        list-style: none;
-        margin: 0 1.5rem; }
-        .nav-bar .nav .mobile-nav li a {
-          font-size: 2.4rem;
-          color: #f7f7f7;
-          text-decoration: none;
-          cursor: pointer; }
-    .nav-bar .nav .menu-bar {
-      margin: 1.8rem 0 0 4rem;
-      border-top: 0.5rem solid #f7f7f7;
-      border-bottom: 0.5rem solid #f7f7f7;
-      border-radius: 0.1rem;
-      width: 3.5rem;
-      padding: 0.5rem 0;
-      display: flex; }
-      .nav-bar .nav .menu-bar::before {
-        border-top: 0.5rem solid #f7f7f7;
-        width: 100%;
-        content: '';
-        border-radius: 0.1rem; }
-  .hero-section .wrapper .left-side p {
-    font-size: 2rem;
-    text-align: center;
-    max-width: 65%; }
-  .hero-section .wrapper .right-side {
-    display: none; } }
-
-@media only screen and (max-width: 44em) {
-  .hero-section .wrapper .left-side h1 {
-    font-size: 3rem; }
-  .hero-section .wrapper .left-side p {
-    font-size: 2rem;
-    max-width: 100%; } }
-
-@media only screen and (max-width: 32.5em) {
-  .hero-section .wrapper .left-side h1 {
-    font-size: 1.9rem; }
-  .hero-section .wrapper .left-side p {
-    max-width: 100%;
-    font-size: 1.3rem; } }
-
-@media only screen and (max-width: 44em) {
-  background: #e7e7e7;
-  padding: 5rem 0;
-  .wrapper {
-    flex-direction: column;
-    text-align: center; }
-    .wrapper .left-side h2 {
-      margin: 0 auto; }
-    .wrapper .left-side .first-p {
-      margin-top: 1.5rem; }
-    .wrapper .left-side .second-p {
-      margin: 1.5rem auto;
-      max-width: 92%;
-      text-align: center; }
-    .wrapper .left-side a .button {
-      margin: 0 auto; }
-    .wrapper .right-side {
-      border: none;
-      max-width: 100%; }
-      .wrapper .right-side img {
-        width: 100%; } }
-
-@media only screen and (max-width: 75em) {
-  .row-1 .card-1 p {
-    min-height: 15.1rem; } }
-
-@media only screen and (max-width: 59.38em) {
-  .row-1 .card-1 p {
-    min-height: 17.1rem; } }
-
-@media only screen and (max-width: 50em) {
-  .row-1 .card-1 p {
-    min-height: 14.9rem; } }
-
-@media only screen and (max-width: 44em) {
-  .heading h2 {
-    text-align: center;
-    margin: 0 auto; }
-  .heading p {
-    text-align: center; }
-  .row-1 .card-1 {
-    max-width: 48%; }
-    .row-1 .card-1 p {
-      border: 0.1rem solid #e7e7e7;
-      border-top: 0rem;
-      line-height: 2rem;
-      min-height: 11rem; } }
-
-@media only screen and (max-width: 32.5em) {
-  .row-1 .card-1 {
-    max-width: 100%; }
-    .row-1 .card-1 p {
-      text-align: center;
-      line-height: 2.8rem;
-      min-height: 4rem; } }
-
-@media only screen and (max-width: 44em) {
-  .wrapper .flex p:nth-last-child(1n + 1) {
-    flex: 0 1 49.5%; }
-  .wrapper .flex p:last-child {
-    flex: 0 1 100%; }
-  .wrapper .flex p:nth-child(3) {
-    flex: 0 1 74.5%; }
-  .wrapper .flex p:nth-child(4) {
-    flex: 0 1 24.5%; } }
-
-@media only screen and (max-width: 50em) {
-  .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-    .wrapper .left-side h2 {
-      text-align: center;
-      margin: 0 auto 1rem; }
-    .wrapper .left-side p {
-      text-align: center;
-      margin: 1rem auto; }
-    .wrapper .right-side p {
-      text-align: center;
-      margin: 1rem auto 0; } }
-=======
->>>>>>> ce6e17726f71925f5e0b24530ba93a3e969c955a
