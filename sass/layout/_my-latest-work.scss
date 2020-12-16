@@ -7,11 +7,18 @@
       max-width: 32rem;
       font-weight: 100;
       color: $color-primary-dark;
+      @include responsive(phone) {
+        margin: 0 auto;
+        text-align: center;
+      }
     }
     p {
       margin-top: 1rem;
       font-size: $p;
       color: $color-primary-dark;
+      @include responsive(phone) {
+        text-align: center;
+      }
     }
   }
   .row-1 {
@@ -23,6 +30,9 @@
       display: flex;
       flex-direction: column;
       max-width: 23.5%;
+      @include responsive(phone) {
+        max-width: 48%;
+      }
       img {
         max-width: 100%;
       }
@@ -34,6 +44,16 @@
         line-height: 2rem;
         font-size: $p;
         min-height: 11rem;
+        @include responsive(tab-land) {
+          min-height: 15.1rem;
+        }
+        @include responsive(tab-mid) {
+          min-height: 17.1rem;
+        }
+        @include responsive(phone) {
+          min-height: 11rem;
+          text-align: center;
+        }
       }
     }
   }

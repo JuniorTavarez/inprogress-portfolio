@@ -47,6 +47,21 @@
         &:nth-child(11) {
           flex: 0 1 16%;
         }
+        @include responsive(phone) {
+          &:nth-last-child(1n + 1) {
+            flex: 0 1 49.5%;
+          }
+          &:last-child {
+            flex: 0 1 100%;
+          }
+
+          &:nth-child(3) {
+            flex: 0 1 74.5%;
+          }
+          &:nth-child(4) {
+            flex: 0 1 24.5%;
+          }
+        }
       }
     }
   }
