@@ -50,7 +50,7 @@
             list-style: none;
             margin: 0 1.5rem;
             a {
-              font-size: $p-small;
+              font-size: 2rem;
               color: $color-primary;
               text-decoration: none;
               cursor: pointer;
@@ -60,7 +60,7 @@
       }
       @include responsive(phone) {
         .menu-bar {
-          margin: 1.8rem 0 0 4rem;
+          margin: 1.8rem 0 0 2.5rem;
           border-top: 0.5rem solid $color-primary;
           border-bottom: 0.5rem solid $color-primary;
           border-radius: 0.1rem;
@@ -97,12 +97,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
       margin-bottom: 4rem;
+      @include responsive(phone) {
+        margin-bottom: 2rem;
+      }
       .left-side {
         flex: 0 1 40%;
         @include responsive(tab-land) {
-          flex: 0 1 45%;
+          flex: 0 1 51%;
         }
         @include responsive(tab-mid) {
           flex: 0 1 100%;
@@ -120,17 +122,13 @@
         }
         h1 {
           color: $color-white;
-          font-size: 2.4rem;
-          padding: 1.2rem 0 0rem;
+          font-size: $h2;
           font-weight: 400;
-          @include responsive(tab-land) {
-            font-size: 2.1rem;
-          }
-          @include responsive(tab-mid) {
-            font-size: 3.5rem;
-          }
+
           @include responsive(phone) {
-            font-size: 3rem;
+            text-align: center;
+            line-height: 2.5rem;
+            margin: 1rem 0 0.5rem;
           }
         }
         p {
@@ -140,22 +138,13 @@
           line-height: 1.8;
           font-weight: 100;
 
-          @include responsive(tab-land) {
-            font-size: 1.4rem;
-            .name {
-              display: block;
-            }
-          }
-
           @include responsive(tab-mid) {
-            font-size: $p-small;
             text-align: center;
-            max-width: 70%;
+            max-width: 80%;
+            font-size: 1.5rem;
           }
           @include responsive(phone) {
-            font-size: 2rem;
-            text-align: center;
-            max-width: 65%;
+            max-width: 100%;
           }
         }
       }
@@ -171,7 +160,7 @@
       flex-direction: column;
 
       @include responsive(tab-land) {
-        flex: 0 1 45%;
+        flex: 0 1 48%;
       }
       @include responsive(tab-mid) {
         display: none;
@@ -182,9 +171,6 @@
         margin: 1rem 0 0 0;
         font-size: $p;
         text-align: center;
-        @include responsive(tab-land) {
-          font-size: 1.4rem;
-        }
       }
       a {
         text-decoration: none;
@@ -216,7 +202,7 @@
     }
     .fa-chevron-down {
       color: $color-primary;
-      font-size: 4em;
+      font-size: $h1;
     }
   }
 }

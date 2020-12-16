@@ -14,11 +14,8 @@
         border-bottom: 0.1rem solid $color-white;
         font-weight: 100;
         color: $color-primary-dark;
-        text-align: center;
+        margin: 0 auto;
         flex: 0 0 100%;
-        @include responsive(tab-mid) {
-          margin: 0 auto;
-        }
       }
       p {
         margin-top: 1rem;
@@ -49,12 +46,12 @@
         }
         div {
           i {
-            font-size: 3rem;
+            font-size: $h1;
             color: $color-secondary-dark;
           }
         }
         h3 {
-          font-size: 2rem;
+          font-size: $h2;
           font-weight: 100;
         }
         p {

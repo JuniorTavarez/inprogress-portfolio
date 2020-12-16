@@ -176,7 +176,7 @@ body {
       list-style: none;
       margin: 0 1.5rem; }
       #header .nav-bar .nav .main-nav li a {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         color: #f7f7f7;
         text-decoration: none;
         cursor: pointer; }
@@ -196,13 +196,13 @@ body {
           list-style: none;
           margin: 0 1.5rem; }
           #header .nav-bar .nav .mobile-nav li a {
-            font-size: 2.4rem;
+            font-size: 2rem;
             color: #f7f7f7;
             text-decoration: none;
             cursor: pointer; } }
   @media only screen and (max-width: 37.5em) {
     #header .nav-bar .nav .menu-bar {
-      margin: 1.8rem 0 0 4rem;
+      margin: 1.8rem 0 0 2.5rem;
       border-top: 0.5rem solid #f7f7f7;
       border-bottom: 0.5rem solid #f7f7f7;
       border-radius: 0.1rem;
@@ -228,11 +228,14 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      #header .hero-section .wrapper {
+        margin-bottom: 2rem; } }
     #header .hero-section .wrapper .left-side {
       flex: 0 1 40%; }
       @media only screen and (max-width: 75em) {
         #header .hero-section .wrapper .left-side {
-          flex: 0 1 45%; } }
+          flex: 0 1 51%; } }
       @media only screen and (max-width: 56.25em) {
         #header .hero-section .wrapper .left-side {
           flex: 0 1 100%;
@@ -247,39 +250,27 @@ body {
             max-width: 100%; } }
       #header .hero-section .wrapper .left-side h1 {
         color: #fff;
-        font-size: 2.4rem;
-        padding: 1.2rem 0 0rem;
+        font-size: 2.26rem;
         font-weight: 400; }
-        @media only screen and (max-width: 75em) {
-          #header .hero-section .wrapper .left-side h1 {
-            font-size: 2.1rem; } }
-        @media only screen and (max-width: 56.25em) {
-          #header .hero-section .wrapper .left-side h1 {
-            font-size: 3.5rem; } }
         @media only screen and (max-width: 37.5em) {
           #header .hero-section .wrapper .left-side h1 {
-            font-size: 3rem; } }
+            text-align: center;
+            line-height: 2.5rem;
+            margin: 1rem 0 0.5rem; } }
       #header .hero-section .wrapper .left-side p {
         color: #fff;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         text-align: left;
         line-height: 1.8;
         font-weight: 100; }
-        @media only screen and (max-width: 75em) {
-          #header .hero-section .wrapper .left-side p {
-            font-size: 1.4rem; }
-            #header .hero-section .wrapper .left-side p .name {
-              display: block; } }
         @media only screen and (max-width: 56.25em) {
           #header .hero-section .wrapper .left-side p {
-            font-size: 2.4rem;
             text-align: center;
-            max-width: 70%; } }
+            max-width: 80%;
+            font-size: 1.5rem; } }
         @media only screen and (max-width: 37.5em) {
           #header .hero-section .wrapper .left-side p {
-            font-size: 2rem;
-            text-align: center;
-            max-width: 65%; } }
+            max-width: 100%; } }
   #header .hero-section .right-side {
     flex: 0 1 40%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -291,18 +282,15 @@ body {
     flex-direction: column; }
     @media only screen and (max-width: 75em) {
       #header .hero-section .right-side {
-        flex: 0 1 45%; } }
+        flex: 0 1 48%; } }
     @media only screen and (max-width: 56.25em) {
       #header .hero-section .right-side {
         display: none; } }
     #header .hero-section .right-side p {
       color: #fff;
       margin: 1rem 0 0 0;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       text-align: center; }
-      @media only screen and (max-width: 75em) {
-        #header .hero-section .right-side p {
-          font-size: 1.4rem; } }
     #header .hero-section .right-side a {
       text-decoration: none; }
       #header .hero-section .right-side a:hover .button {
@@ -314,7 +302,7 @@ body {
         align-self: center;
         padding: 0.2rem 15rem;
         color: #fff;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         border: #f7f7f7 0.1rem solid;
         border-radius: 0.3rem;
         transition: background-color 0.5s ease-in-out 0s, color 0.5s ease-in-out 0s; }
@@ -323,7 +311,7 @@ body {
             padding: 0.2rem 6rem; } }
   #header .hero-section .fa-chevron-down {
     color: #f7f7f7;
-    font-size: 4em; }
+    font-size: 3.66rem; }
 
 #who-am-i {
   background: #e7e7e7;
@@ -342,7 +330,7 @@ body {
     #who-am-i .wrapper .left-side {
       flex: 0 1 50%; }
       #who-am-i .wrapper .left-side h2 {
-        font-size: 2.4rem;
+        font-size: 2.26rem;
         border-bottom: 0.1rem solid #fff;
         max-width: 32rem;
         font-weight: 100;
@@ -352,14 +340,14 @@ body {
             margin: 0 auto; } }
       #who-am-i .wrapper .left-side .first-p {
         margin-top: 1rem;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         color: #484848; }
         @media only screen and (max-width: 37.5em) {
           #who-am-i .wrapper .left-side .first-p {
             margin-top: 1.5rem; } }
       #who-am-i .wrapper .left-side .second-p {
         margin-top: 0.5rem;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         color: #484848; }
         @media only screen and (max-width: 37.5em) {
           #who-am-i .wrapper .left-side .second-p {
@@ -385,7 +373,7 @@ body {
           text-align: center;
           border: 0.1rem solid #0a1b26;
           border-radius: 0.3rem;
-          font-size: 1.6rem;
+          font-size: 1.4rem;
           transition: background-color 0.5s ease-in-out; }
           @media only screen and (max-width: 37.5em) {
             #who-am-i .wrapper .left-side a .button {
@@ -404,7 +392,7 @@ body {
 #my-latest-work {
   padding: 10rem 0; }
   #my-latest-work .heading h2 {
-    font-size: 2.4rem;
+    font-size: 2.26rem;
     border-bottom: 0.1rem solid #000;
     max-width: 32rem;
     font-weight: 100;
@@ -415,7 +403,7 @@ body {
         text-align: center; } }
   #my-latest-work .heading p {
     margin-top: 1rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #484848; }
     @media only screen and (max-width: 37.5em) {
       #my-latest-work .heading p {
@@ -440,7 +428,7 @@ body {
         padding: 1.5rem;
         text-align: justify;
         line-height: 2rem;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         min-height: 11rem; }
         @media only screen and (max-width: 75em) {
           #my-latest-work .row-1 .card-1 p {
@@ -462,7 +450,7 @@ body {
     flex-wrap: wrap; }
     #technological-skills .wrapper h2 {
       max-width: 32rem;
-      font-size: 2.4rem;
+      font-size: 2.26rem;
       border-bottom: 0.1rem solid #fff;
       font-weight: 100;
       color: #484848;
@@ -470,7 +458,7 @@ body {
       flex: 0 0 100%; }
     #technological-skills .wrapper .main-paragraph {
       margin: 1rem;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       flex: 0 0 100%;
       text-align: center; }
     #technological-skills .wrapper .flex {
@@ -480,7 +468,7 @@ body {
       justify-content: space-between; }
       #technological-skills .wrapper .flex p {
         text-align: center;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         background: #0a1b26;
         border: 0.1rem solid #0a1b26;
         border-radius: 0.3rem;
@@ -516,7 +504,7 @@ body {
         flex-direction: column; } }
     #connect .wrapper .left-side h2 {
       max-width: 32rem;
-      font-size: 2.4rem;
+      font-size: 2.26rem;
       border-bottom: 0.2rem solid #e7e7e7;
       font-weight: 100;
       color: #484848;
@@ -527,7 +515,7 @@ body {
           margin: 0 auto 1rem; } }
     #connect .wrapper .left-side p {
       margin-top: 1rem;
-      font-size: 1.6rem; }
+      font-size: 1.4rem; }
       @media only screen and (max-width: 37.5em) {
         #connect .wrapper .left-side p {
           text-align: center;
@@ -548,7 +536,7 @@ body {
         #connect .wrapper .right-side p i {
           text-align: center;
           padding: 1.2rem;
-          font-size: 2rem;
+          font-size: 2.26rem;
           min-width: 4.5rem;
           min-height: 4.5rem; }
 
@@ -563,18 +551,15 @@ body {
       text-align: center; }
       #why-work-with-me .wrapper .top h2 {
         max-width: 32rem;
-        font-size: 2.4rem;
+        font-size: 2.26rem;
         border-bottom: 0.1rem solid #fff;
         font-weight: 100;
         color: #484848;
-        text-align: center;
+        margin: 0 auto;
         flex: 0 0 100%; }
-        @media only screen and (max-width: 56.25em) {
-          #why-work-with-me .wrapper .top h2 {
-            margin: 0 auto; } }
       #why-work-with-me .wrapper .top p {
         margin-top: 1rem;
-        font-size: 1.6rem; }
+        font-size: 1.4rem; }
         @media only screen and (max-width: 56.25em) {
           #why-work-with-me .wrapper .top p {
             margin: 1rem auto; } }
@@ -597,13 +582,13 @@ body {
             margin: 2rem 0;
             justify-content: center; } }
         #why-work-with-me .wrapper .info-section .card div i {
-          font-size: 3rem;
+          font-size: 3.66rem;
           color: #0a1b26; }
         #why-work-with-me .wrapper .info-section .card h3 {
-          font-size: 2rem;
+          font-size: 2.26rem;
           font-weight: 100; }
         #why-work-with-me .wrapper .info-section .card p {
-          font-size: 1.6rem; }
+          font-size: 1.4rem; }
 
 #footer {
   background-color: #484848;
@@ -621,23 +606,23 @@ body {
         #footer .wrapper .left-side {
           text-align: center; } }
       #footer .wrapper .left-side h2 {
-        font-size: 2.4rem; }
+        font-size: 2.26rem; }
       #footer .wrapper .left-side p {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         margin: 0.5rem 0; }
       #footer .wrapper .left-side .success {
         margin-top: 1rem;
         display: flex;
         flex-direction: column; }
         #footer .wrapper .left-side .success li {
-          font-size: 1.2rem;
+          font-size: 1rem;
           list-style: none; }
       #footer .wrapper .left-side .icons {
         margin-top: 1rem;
         display: flex;
         justify-content: space-between;
         max-width: 15rem;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         list-style: none; }
         @media only screen and (max-width: 37.5em) {
           #footer .wrapper .left-side .icons {
@@ -651,13 +636,13 @@ body {
           flex: 1 1 100%;
           text-align: center; } }
       #footer .wrapper .right-side h2 {
-        font-size: 2.4rem; }
+        font-size: 2.26rem; }
         @media only screen and (max-width: 37.5em) {
           #footer .wrapper .right-side h2 {
             margin: 1rem 0 0; } }
       #footer .wrapper .right-side p {
         margin: 1rem 0;
-        font-size: 1.6rem; }
+        font-size: 1.4rem; }
         @media only screen and (max-width: 37.5em) {
           #footer .wrapper .right-side p {
             margin: 0rem; } }
@@ -678,7 +663,7 @@ body {
       #testimonials .wrapper .top h2 {
         margin: 0 auto;
         max-width: 32rem;
-        font-size: 2.4rem;
+        font-size: 2.26rem;
         border-bottom: 0.1rem solid #484848;
         font-weight: 100;
         color: #484848;
@@ -686,7 +671,7 @@ body {
       #testimonials .wrapper .top p {
         display: block;
         margin-top: 1rem;
-        font-size: 1.2rem; }
+        font-size: 1.4rem; }
     #testimonials .wrapper .content {
       border-left: 0.1rem black solid;
       margin-top: 2rem;
@@ -697,7 +682,7 @@ body {
       #testimonials .wrapper .content .paragraph {
         margin: 0 0 0 2rem; }
         #testimonials .wrapper .content .paragraph p {
-          font-size: 1.6rem; }
+          font-size: 1.4rem; }
         #testimonials .wrapper .content .paragraph .name {
           margin-top: 0.5rem;
           display: block; }
@@ -715,7 +700,7 @@ body {
   padding: 10rem 0; }
   #technologies-used h2 {
     max-width: 32rem;
-    font-size: 2.4rem;
+    font-size: 2.26rem;
     border-bottom: 0.1rem solid #484848;
     font-weight: 100;
     color: #484848;
@@ -754,7 +739,7 @@ body {
         #technologies-used .wrapper .right-side {
           text-align: center; } }
       #technologies-used .wrapper .right-side ul {
-        font-size: 1.6rem; }
+        font-size: 1.4rem; }
         #technologies-used .wrapper .right-side ul li {
           list-style: none;
           border-left: solid #0a1b26 0.3rem;
@@ -764,7 +749,7 @@ body {
               border-left: none; } }
       #technologies-used .wrapper .right-side p {
         border-left: solid #0a1b26 0.3rem;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         padding-left: 1rem; }
         @media only screen and (max-width: 37.5em) {
           #technologies-used .wrapper .right-side p {
@@ -772,7 +757,7 @@ body {
   #technologies-used .back-to-projects {
     margin-top: 2rem;
     text-align: center;
-    font-size: 1.6rem; }
+    font-size: 1.4rem; }
     #technologies-used .back-to-projects a {
       text-decoration: none;
       color: #484848; }
@@ -784,7 +769,7 @@ body {
   padding: 10rem 0; }
   #overview h2 {
     max-width: 32rem;
-    font-size: 2.4rem;
+    font-size: 2.26rem;
     border-bottom: 0.1rem solid #fff;
     font-weight: 100;
     color: #484848;
@@ -804,7 +789,7 @@ body {
       border-left: solid 0.2rem black;
       height: 100%;
       padding-left: 1rem;
-      font-size: 1.6rem; }
+      font-size: 1.4rem; }
     #overview .wrapper .img {
       flex: 0 1 30%;
       display: flex;
@@ -830,10 +815,10 @@ body {
           text-decoration: none;
           border: 0.1rem solid #0a1b26;
           border-radius: 0.4rem;
-          font-size: 1.6rem; }
+          font-size: 1.4rem; }
           @media only screen and (max-width: 56.25em) {
             #overview .wrapper .img .button a {
               padding: 1rem 1.5rem; } }
           #overview .wrapper .img .button a i {
             margin-left: 1rem;
-            font-size: 1.6rem; }
+            font-size: 1.4rem; }
