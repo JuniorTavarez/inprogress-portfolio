@@ -13,7 +13,7 @@
       h2 {
         margin: 0 auto;
         max-width: 32rem;
-        font-size: $h2;
+        font-size: $h1;
         border-bottom: 0.1rem solid $color-primary-dark;
         font-weight: 100;
         color: $color-primary-dark;
@@ -22,7 +22,7 @@
       p {
         display: block;
         margin-top: 1rem;
-        font-size: $p;
+        font-size: 1.6rem;
       }
     }
     .content {
@@ -32,11 +32,13 @@
 
       text-align: center;
       display: flex;
-      //   background: yellow;
 
       justify-content: center;
+
+      @include responsive(tab-land) {
+        border-left: none;
+      }
       .paragraph {
-        // background: blue;
         margin: 0 0 0 2rem;
 
         p {
@@ -51,7 +53,8 @@
     #bullets {
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
+      text-align: center;
       .bullets {
         margin: 1rem 0.5rem 0;
         background-color: $color-secondary-dark;

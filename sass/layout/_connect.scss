@@ -3,7 +3,7 @@
   .wrapper {
     display: flex;
     justify-content: space-between;
-    @include responsive(phone) {
+    @include responsive(tab-mid) {
       justify-content: center;
       align-items: center;
       flex-direction: column;
@@ -11,12 +11,12 @@
     .left-side {
       h2 {
         max-width: 32rem;
-        font-size: $h2;
+        font-size: $h1;
         border-bottom: 0.2rem solid $color-primary-light;
         font-weight: 100;
         color: $color-primary-dark;
         text-align: left;
-        @include responsive(phone) {
+        @include responsive(tab-mid) {
           text-align: center;
           margin: 0 auto 1rem;
         }
@@ -24,7 +24,7 @@
       p {
         margin-top: 1rem;
         font-size: $p;
-        @include responsive(phone) {
+        @include responsive(tab-mid) {
           text-align: center;
           margin: 1rem auto;
         }
@@ -34,7 +34,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
+      flex-wrap: wrap;
       & p:not(:last-child) {
         margin-right: 1rem;
       }
@@ -42,7 +42,7 @@
         border: solid 0.2rem $color-secondary-dark;
 
         border-radius: 30%;
-        @include responsive(phone) {
+        @include responsive(tab-mid) {
           text-align: center;
           margin: 1rem auto 0;
         }

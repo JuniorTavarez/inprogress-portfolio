@@ -1,13 +1,11 @@
 #who-am-i {
   background: $color-primary-light;
   padding: 10rem 0;
-  @include responsive(phone) {
-    padding: 5rem 0;
-  }
+
   .wrapper {
     display: flex;
     justify-content: space-around;
-    @include responsive(phone) {
+    @include responsive(tab-mid) {
       flex-direction: column;
       text-align: center;
       align-items: center;
@@ -16,12 +14,12 @@
       flex: 0 1 50%;
 
       h2 {
-        font-size: $h2;
+        font-size: $h1;
         border-bottom: 0.1rem solid $color-white;
         max-width: 32rem;
         font-weight: 100;
         color: $color-primary-dark;
-        @include responsive(phone) {
+        @include responsive(tab-mid) {
           margin: 0 auto;
         }
       }
@@ -29,7 +27,7 @@
         margin-top: 1rem;
         font-size: $p;
         color: $color-primary-dark;
-        @include responsive(phone) {
+        @include responsive(tab-mid) {
           margin-top: 1.5rem;
         }
       }
@@ -37,7 +35,7 @@
         margin-top: 0.5rem;
         font-size: $p;
         color: $color-primary-dark;
-        @include responsive(phone) {
+        @include responsive(tab-mid) {
           margin: 1.5rem auto;
           max-width: 92%;
           text-align: center;
@@ -69,7 +67,7 @@
           border-radius: 0.3rem;
           font-size: $p;
           transition: background-color 0.5s ease-in-out;
-          @include responsive(phone) {
+          @include responsive(tab-mid) {
             margin: 0 auto;
           }
         }
@@ -83,7 +81,7 @@
 
       max-width: 45rem;
 
-      @include responsive(phone) {
+      @include responsive(tab-mid) {
         border: none;
       }
       img {
