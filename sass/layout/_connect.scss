@@ -23,7 +23,7 @@
       }
       p {
         margin-top: 1rem;
-        font-size: 2rem;
+        font-size: $h2;
         @include responsive(tab-mid) {
           text-align: center;
           margin: 1rem auto;

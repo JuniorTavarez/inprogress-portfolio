@@ -14,7 +14,7 @@
     }
     p {
       margin-top: 1rem;
-      font-size: 2rem;
+      font-size: $h2;
       color: $color-primary-dark;
       @include responsive(phone) {
         text-align: center;

@@ -25,7 +25,7 @@
       }
       .first-p {
         margin-top: 1rem;
-        font-size: 2rem;
+        font-size: $h2;
         color: $color-primary-dark;
         @include responsive(tab-mid) {
           margin-top: 1.5rem;
