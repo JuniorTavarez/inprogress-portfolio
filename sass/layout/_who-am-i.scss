@@ -15,7 +15,7 @@
     }
     .left-side {
       flex: 0 1 50%;
-
+      margin-right: 1rem;
       h2 {
         font-size: $h1;
         border-bottom: 0.1rem solid $color-white;
@@ -82,7 +82,7 @@
 
       border-radius: 1rem;
 
-      max-width: 45rem;
+      max-width: 100%;
 
       @include responsive(tab-mid) {
         border: none;

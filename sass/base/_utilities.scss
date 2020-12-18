@@ -1,5 +1,5 @@
 .container {
-  max-width: 110rem;
+  max-width: 60%;
   margin: 0 auto;
   // 1200px
   @include responsive(tab-land) {
