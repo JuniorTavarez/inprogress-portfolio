@@ -24,9 +24,6 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 html {
   font-size: 62.5%; }
-  @media only screen and (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -38,65 +35,8 @@ body {
 body {
   font-family: Helvetica, Arial, sans-serif;
   font-weight: 400;
-  /*font-size: 16px;*/
   line-height: 1.7;
   color: #777; }
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  margin-bottom: 6rem; }
-  .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    /*
-        animation-delay: 3s;
-        animation-iteration-count: 3;
-        */ }
-    @media only screen and (max-width: 37.5em) {
-      .heading-primary--main {
-        letter-spacing: 1rem;
-        font-family: 5rem; } }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation: moveInRight 1s ease-out; }
-    @media only screen and (max-width: 37.5em) {
-      .heading-primary--sub {
-        letter-spacing: 0.5rem; } }
-
-.heading-secondary {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  display: flex;
-  background-image: linear-gradient(to right, #e7e7e7, #484848);
-  color: transparent;
-  letter-spacing: 0.2rem;
-  transition: all 0.2s; }
-  @media only screen and (max-width: 37.5em) {
-    .heading-secondary {
-      font-size: 2.5rem; } }
-  .heading-secondary:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
-
-.heading-tertiary {
-  font-size: 1.6rem;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-.paragraph {
-  font-size: 1.6rem; }
-  .paragraph:not(:last-child) {
-    margin-bottom: 3rem; }
 
 .container {
   max-width: 110rem;
@@ -186,7 +126,7 @@ body {
           #header .nav-bar .nav .main-nav li:nth-child(4) {
             display: none; } }
       #header .nav-bar .nav .main-nav li a {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         color: #f7f7f7;
         text-decoration: none;
         cursor: pointer; }
@@ -239,7 +179,7 @@ body {
       #header .hero-section .wrapper {
         margin-bottom: 2rem; } }
     #header .hero-section .wrapper .left-side {
-      flex: 0 1 40%; }
+      flex: 0 1 45%; }
       @media only screen and (max-width: 75em) {
         #header .hero-section .wrapper .left-side {
           flex: 0 1 51%; } }
@@ -261,7 +201,7 @@ body {
         font-weight: 400; }
         @media only screen and (max-width: 75em) {
           #header .hero-section .wrapper .left-side h1 {
-            font-size: 2rem; } }
+            font-size: 2.2rem; } }
         @media only screen and (max-width: 37.5em) {
           #header .hero-section .wrapper .left-side h1 {
             text-align: center;
@@ -270,24 +210,21 @@ body {
             font-size: 2.26rem; } }
       #header .hero-section .wrapper .left-side p {
         color: #fff;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         text-align: left;
         line-height: 1.8;
         font-weight: 100; }
-        @media only screen and (max-width: 75em) {
-          #header .hero-section .wrapper .left-side p {
-            font-size: 1.29rem; } }
         @media only screen and (max-width: 56.25em) {
           #header .hero-section .wrapper .left-side p {
             text-align: center;
             max-width: 80%;
-            font-size: 1.68rem; } }
+            font-size: 1.92rem; } }
         @media only screen and (max-width: 37.5em) {
           #header .hero-section .wrapper .left-side p {
             max-width: 100%;
-            font-size: 1.4rem; } }
+            font-size: 1.6rem; } }
   #header .hero-section .right-side {
-    flex: 0 1 40%;
+    flex: 0 1 45%;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 1.5rem;
     border-radius: 1rem;
@@ -304,7 +241,7 @@ body {
     #header .hero-section .right-side p {
       color: #fff;
       margin: 1rem 0 0 0;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       text-align: center; }
     #header .hero-section .right-side a {
       text-decoration: none; }
@@ -317,7 +254,7 @@ body {
         align-self: center;
         padding: 0.2rem 15rem;
         color: #fff;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         border: #f7f7f7 0.1rem solid;
         border-radius: 0.3rem;
         transition: background-color 0.5s ease-in-out 0s, color 0.5s ease-in-out 0s; }
@@ -352,14 +289,14 @@ body {
             margin: 0 auto; } }
       #who-am-i .wrapper .left-side .first-p {
         margin-top: 1rem;
-        font-size: 1.4rem;
+        font-size: 2rem;
         color: #484848; }
         @media only screen and (max-width: 56.25em) {
           #who-am-i .wrapper .left-side .first-p {
             margin-top: 1.5rem; } }
       #who-am-i .wrapper .left-side .second-p {
         margin-top: 0.5rem;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         color: #484848; }
         @media only screen and (max-width: 56.25em) {
           #who-am-i .wrapper .left-side .second-p {
@@ -385,7 +322,7 @@ body {
           text-align: center;
           border: 0.1rem solid #0a1b26;
           border-radius: 0.3rem;
-          font-size: 1.4rem;
+          font-size: 1.6rem;
           transition: background-color 0.5s ease-in-out; }
           @media only screen and (max-width: 56.25em) {
             #who-am-i .wrapper .left-side a .button {
@@ -415,7 +352,7 @@ body {
         text-align: center; } }
   #my-latest-work .heading p {
     margin-top: 1rem;
-    font-size: 1.68rem;
+    font-size: 2rem;
     color: #484848; }
     @media only screen and (max-width: 37.5em) {
       #my-latest-work .heading p {
@@ -428,7 +365,8 @@ body {
       margin: 2rem 0 0.3rem 0;
       display: flex;
       flex-direction: column;
-      max-width: 23.5%; }
+      max-width: 23.5%;
+      border: 0.1rem solid #e7e7e7; }
       @media only screen and (max-width: 56.25em) {
         #my-latest-work .row-1 .card-1 {
           max-width: 48%; } }
@@ -438,22 +376,13 @@ body {
       #my-latest-work .row-1 .card-1 img {
         max-width: 100%; }
       #my-latest-work .row-1 .card-1 p {
-        border: 0.1rem solid #e7e7e7;
         border-top: 0rem;
         padding: 1.5rem;
         text-align: justify;
         line-height: 2rem;
-        font-size: 1.4rem;
-        min-height: 11rem; }
-        @media only screen and (max-width: 75em) {
-          #my-latest-work .row-1 .card-1 p {
-            min-height: 15.1rem; } }
-        @media only screen and (max-width: 56.25em) {
-          #my-latest-work .row-1 .card-1 p {
-            min-height: 17.1rem; } }
+        font-size: 1.6rem; }
         @media only screen and (max-width: 37.5em) {
           #my-latest-work .row-1 .card-1 p {
-            min-height: 11rem;
             text-align: center; } }
 
 #technological-skills {
@@ -473,7 +402,7 @@ body {
       flex: 0 0 100%; }
     #technological-skills .wrapper .main-paragraph {
       margin: 1rem;
-      font-size: 1.4rem;
+      font-size: 2rem;
       flex: 0 0 100%;
       text-align: center; }
     #technological-skills .wrapper .flex {
@@ -483,7 +412,7 @@ body {
       justify-content: space-between; }
       #technological-skills .wrapper .flex p {
         text-align: center;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         background: #0a1b26;
         border: 0.1rem solid #0a1b26;
         border-radius: 0.3rem;
@@ -530,7 +459,7 @@ body {
           margin: 0 auto 1rem; } }
     #connect .wrapper .left-side p {
       margin-top: 1rem;
-      font-size: 1.4rem; }
+      font-size: 2rem; }
       @media only screen and (max-width: 56.25em) {
         #connect .wrapper .left-side p {
           text-align: center;
@@ -575,7 +504,7 @@ body {
         flex: 0 0 100%; }
       #why-work-with-me .wrapper .top p {
         margin-top: 1rem;
-        font-size: 1.4rem; }
+        font-size: 2rem; }
         @media only screen and (max-width: 56.25em) {
           #why-work-with-me .wrapper .top p {
             margin: 1rem auto; } }
@@ -604,7 +533,7 @@ body {
           font-size: 2.26rem;
           font-weight: 100; }
         #why-work-with-me .wrapper .info-section .card p {
-          font-size: 1.4rem; }
+          font-size: 1.6rem; }
 
 #footer {
   background-color: #484848;
@@ -620,23 +549,27 @@ body {
       #footer .wrapper {
         flex-direction: column; } }
     #footer .wrapper .left-side {
-      flex: 0 1 75%; }
+      flex: 0 1 72%; }
       @media only screen and (max-width: 56.25em) {
         #footer .wrapper .left-side {
           text-align: center; } }
       #footer .wrapper .left-side h2 {
         font-size: 3.66rem;
         font-weight: 400; }
-      #footer .wrapper .left-side p {
+      #footer .wrapper .left-side .paragraph p {
         font-size: 1.6rem;
         margin: 0.5rem 0; }
+        #footer .wrapper .left-side .paragraph p:nth-last-child(1) {
+          margin-top: 2.5rem;
+          font-size: 2.26rem; }
       #footer .wrapper .left-side .success {
-        margin-top: 1rem;
         display: flex;
         flex-direction: column; }
         #footer .wrapper .left-side .success li {
-          font-size: 1.2rem;
+          font-size: 1.4rem;
           list-style: none; }
+          #footer .wrapper .left-side .success li:not(:last-child) {
+            margin-bottom: 1rem; }
       #footer .wrapper .left-side .icons {
         margin-top: 1rem;
         display: flex;
@@ -651,7 +584,7 @@ body {
           color: #f7f7f7;
           margin-right: 1.5rem; }
     #footer .wrapper .right-side {
-      flex: 0 1 20%;
+      flex: 0 1 25%;
       margin-left: 1rem; }
       @media only screen and (max-width: 56.25em) {
         #footer .wrapper .right-side {
@@ -665,13 +598,13 @@ body {
             margin: 1rem 0 0; } }
       #footer .wrapper .right-side p {
         margin: 1rem 0;
-        font-size: 1.4rem; }
+        font-size: 1.6rem; }
         @media only screen and (max-width: 56.25em) {
           #footer .wrapper .right-side p {
             margin: 0rem; } }
   #footer .last {
     text-align: center;
-    font-size: 1rem; }
+    font-size: 1.2rem; }
     @media only screen and (max-width: 56.25em) {
       #footer .last {
         margin-top: 4rem; } }
@@ -698,24 +631,24 @@ body {
       #testimonials .wrapper .top p {
         display: block;
         margin-top: 1rem;
-        font-size: 1.6rem; }
+        font-size: 2rem; }
     #testimonials .wrapper .content {
       border-left: 0.1rem black solid;
       margin-top: 2rem;
       flex: 1 1 100%;
+      padding-left: 2rem;
       text-align: center;
       display: flex;
       justify-content: center; }
       @media only screen and (max-width: 75em) {
         #testimonials .wrapper .content {
-          border-left: none; } }
-      #testimonials .wrapper .content .paragraph {
-        margin: 0 0 0 2rem; }
-        #testimonials .wrapper .content .paragraph p {
-          font-size: 1.4rem; }
-        #testimonials .wrapper .content .paragraph .name {
-          margin-top: 0.5rem;
-          display: block; }
+          border-left: none;
+          padding-left: none; } }
+      #testimonials .wrapper .content .paragraph p {
+        font-size: 1.6rem; }
+      #testimonials .wrapper .content .paragraph .name {
+        margin-top: 0.5rem;
+        display: block; }
     #testimonials .wrapper #bullets {
       display: flex;
       align-items: center;
@@ -770,7 +703,7 @@ body {
         #technologies-used .wrapper .right-side {
           text-align: center; } }
       #technologies-used .wrapper .right-side ul {
-        font-size: 1.4rem; }
+        font-size: 1.6rem; }
         #technologies-used .wrapper .right-side ul li {
           list-style: none;
           border-left: solid #0a1b26 0.3rem;
@@ -780,7 +713,7 @@ body {
               border-left: none; } }
       #technologies-used .wrapper .right-side p {
         border-left: solid #0a1b26 0.3rem;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         padding-left: 1rem; }
         @media only screen and (max-width: 56.25em) {
           #technologies-used .wrapper .right-side p {
@@ -788,7 +721,7 @@ body {
   #technologies-used .back-to-projects {
     margin-top: 2rem;
     text-align: center;
-    font-size: 1.4rem; }
+    font-size: 1.6rem; }
     #technologies-used .back-to-projects a {
       text-decoration: none;
       color: #484848; }
@@ -820,7 +753,7 @@ body {
       border-left: solid 0.2rem black;
       height: 100%;
       padding-left: 1rem;
-      font-size: 1.4rem; }
+      font-size: 1.6rem; }
       @media only screen and (max-width: 56.25em) {
         #overview .wrapper p {
           border-left: none;
@@ -850,10 +783,10 @@ body {
           text-decoration: none;
           border: 0.1rem solid #0a1b26;
           border-radius: 0.4rem;
-          font-size: 1.4rem; }
+          font-size: 1.6rem; }
           @media only screen and (max-width: 56.25em) {
             #overview .wrapper .img .button a {
               padding: 1rem 1.5rem; } }
           #overview .wrapper .img .button a i {
             margin-left: 1rem;
-            font-size: 1.4rem; }
+            font-size: 1.6rem; }

@@ -2,7 +2,6 @@
   padding: 10rem 0;
   .wrapper {
     display: flex;
-    // flex-direction: column;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;
@@ -22,14 +21,14 @@
       p {
         display: block;
         margin-top: 1rem;
-        font-size: 1.6rem;
+        font-size: 2rem;
       }
     }
     .content {
       border-left: 0.1rem black solid;
       margin-top: 2rem;
       flex: 1 1 100%;
-
+      padding-left: 2rem;
       text-align: center;
       display: flex;
 
@@ -37,10 +36,9 @@
 
       @include responsive(tab-land) {
         border-left: none;
+        padding-left: none;
       }
       .paragraph {
-        margin: 0 0 0 2rem;
-
         p {
           font-size: $p;
         }

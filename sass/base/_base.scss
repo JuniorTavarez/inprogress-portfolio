@@ -19,9 +19,9 @@ html {
   //   // width < 900?
   // }
 
-  @include responsive(big-desktop) {
-    font-size: 75%; //1rem = 12, 12/16
-  }
+  // @include responsive(big-desktop) {
+  //   font-size: 75%; //1rem = 12, 12/16
+  // }
 }
 
 body {

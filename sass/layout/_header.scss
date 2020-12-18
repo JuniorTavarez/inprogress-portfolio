@@ -123,7 +123,7 @@
         margin-bottom: 2rem;
       }
       .left-side {
-        flex: 0 1 40%;
+        flex: 0 1 45%;
         @include responsive(tab-land) {
           flex: 0 1 51%;
         }
@@ -147,7 +147,7 @@
           font-weight: 400;
 
           @include responsive(tab-land) {
-            font-size: 2rem;
+            font-size: 2.2rem;
           }
           @include responsive(phone) {
             text-align: center;
@@ -163,7 +163,7 @@
           line-height: 1.8;
           font-weight: 100;
           @include responsive(tab-land) {
-            font-size: 1.29rem;
+            // font-size: 1.29rem;
           }
 
           @include responsive(tab-mid) {
@@ -179,7 +179,7 @@
       }
     }
     .right-side {
-      flex: 0 1 40%;
+      flex: 0 1 45%;
       background-color: rgba($color-black, 0.5);
       padding: 1.5rem;
       border-radius: 1rem;

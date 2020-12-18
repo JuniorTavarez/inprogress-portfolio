@@ -14,7 +14,7 @@
     }
     p {
       margin-top: 1rem;
-      font-size: $p * 1.2;
+      font-size: 2rem;
       color: $color-primary-dark;
       @include responsive(phone) {
         text-align: center;
@@ -25,11 +25,13 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
     .card-1 {
       margin: 2rem 0 0.3rem 0;
       display: flex;
       flex-direction: column;
       max-width: 23.5%;
+      border: 0.1rem solid $color-primary-light;
       @include responsive(tab-mid) {
         max-width: 48%;
       }
@@ -40,21 +42,20 @@
         max-width: 100%;
       }
       p {
-        border: 0.1rem solid $color-primary-light;
         border-top: 0rem;
         padding: 1.5rem;
         text-align: justify;
         line-height: 2rem;
         font-size: $p;
-        min-height: 11rem;
+        // min-height: 11rem;
         @include responsive(tab-land) {
-          min-height: 15.1rem;
+          // min-height: 15.1rem;
         }
         @include responsive(tab-mid) {
-          min-height: 17.1rem;
+          // min-height: 17.1rem;
         }
         @include responsive(phone) {
-          min-height: 11rem;
+          // min-height: 11rem;
           text-align: center;
         }
       }

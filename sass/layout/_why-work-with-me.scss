@@ -19,7 +19,7 @@
       }
       p {
         margin-top: 1rem;
-        font-size: $p;
+        font-size: 2rem;
         @include responsive(tab-mid) {
           margin: 1rem auto;
         }
