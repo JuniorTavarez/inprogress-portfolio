@@ -268,6 +268,9 @@ body {
 #who-am-i {
   background: #e7e7e7;
   padding: 10rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    #who-am-i {
+      padding: 6rem 0; } }
   #who-am-i .wrapper {
     display: flex;
     justify-content: space-around; }
@@ -340,6 +343,9 @@ body {
 
 #my-latest-work {
   padding: 10rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    #my-latest-work {
+      padding: 6rem 0; } }
   #my-latest-work .heading h2 {
     font-size: 3rem;
     border-bottom: 0.1rem solid #000;
@@ -388,6 +394,9 @@ body {
 #technological-skills {
   background: #e7e7e7;
   padding: 10rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    #technological-skills {
+      padding: 6rem 0; } }
   #technological-skills .wrapper {
     display: flex;
     justify-content: center;
@@ -438,6 +447,9 @@ body {
 
 #connect {
   padding: 10rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    #connect {
+      padding: 6rem 0; } }
   #connect .wrapper {
     display: flex;
     justify-content: space-between; }
@@ -473,21 +485,22 @@ body {
         margin-right: 1rem; }
       #connect .wrapper .right-side p {
         border: solid 0.2rem #0a1b26;
-        border-radius: 30%; }
+        border-radius: 35%;
+        width: 5rem;
+        height: 5rem; }
         @media only screen and (max-width: 56.25em) {
           #connect .wrapper .right-side p {
-            text-align: center;
             margin: 1rem auto 0; } }
         #connect .wrapper .right-side p i {
-          text-align: center;
-          padding: 1.2rem;
-          font-size: 1.8rem;
-          min-width: 4.5rem;
-          min-height: 4.5rem; }
+          padding: 1.5rem;
+          font-size: 1.8rem; }
 
 #why-work-with-me {
   background: #e7e7e7;
   padding: 10rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    #why-work-with-me {
+      padding: 6rem 0; } }
   #why-work-with-me .wrapper {
     display: flex;
     flex-direction: column;
@@ -542,6 +555,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     #footer {
       padding: 10rem 0 1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    #footer {
+      padding-top: 6rem; } }
   #footer .wrapper {
     display: flex;
     justify-content: space-between; }
@@ -557,10 +573,11 @@ body {
         font-size: 3rem;
         font-weight: 400; }
       #footer .wrapper .left-side .paragraph p {
-        font-size: 1.6rem;
-        margin: 0.5rem 0; }
+        font-size: 1.6rem; }
+        #footer .wrapper .left-side .paragraph p:not(:last-child) {
+          margin: 1.5rem 0; }
         #footer .wrapper .left-side .paragraph p:nth-last-child(1) {
-          margin-top: 2.5rem;
+          margin: 1rem 0;
           font-size: 1.8rem; }
       #footer .wrapper .left-side .success {
         display: flex;
@@ -599,18 +616,18 @@ body {
       #footer .wrapper .right-side p {
         margin: 1rem 0;
         font-size: 1.6rem; }
-        @media only screen and (max-width: 56.25em) {
-          #footer .wrapper .right-side p {
-            margin: 0rem; } }
   #footer .last {
     text-align: center;
-    font-size: 1.2rem; }
+    font-size: 1.4rem; }
     @media only screen and (max-width: 56.25em) {
       #footer .last {
         margin-top: 4rem; } }
 
 #testimonials {
   padding: 10rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    #testimonials {
+      padding: 6rem 0; } }
   #testimonials .wrapper {
     display: flex;
     justify-content: center;
@@ -662,6 +679,9 @@ body {
 
 #technologies-used {
   padding: 10rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    #technologies-used {
+      padding: 6rem 0; } }
   #technologies-used h2 {
     max-width: 32rem;
     font-size: 3rem;
@@ -731,6 +751,9 @@ body {
 #overview {
   background: #e7e7e7;
   padding: 10rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    #overview {
+      padding: 6rem 0; } }
   #overview h2 {
     max-width: 32rem;
     font-size: 3rem;

@@ -1,5 +1,8 @@
 #technologies-used {
   padding: 10rem 0;
+  @include responsive(phone) {
+    padding: $padding 0;
+  }
   h2 {
     max-width: 32rem;
     font-size: $h1;

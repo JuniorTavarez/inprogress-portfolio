@@ -1,5 +1,8 @@
 #connect {
   padding: 10rem 0;
+  @include responsive(phone) {
+    padding: $padding 0;
+  }
   .wrapper {
     display: flex;
     justify-content: space-between;
@@ -40,19 +43,21 @@
       }
       p {
         border: solid 0.2rem $color-secondary-dark;
+        // padding: 0.1rem;
+        border-radius: 35%;
+        // display: flex;
+        // align-items: center;
+        width: 5rem;
+        height: 5rem;
 
-        border-radius: 30%;
         @include responsive(tab-mid) {
-          text-align: center;
           margin: 1rem auto 0;
         }
 
         i {
-          text-align: center;
-          padding: 1.2rem;
+          padding: 1.5rem;
           font-size: $h2;
-          min-width: 4.5rem;
-          min-height: 4.5rem;
+          // border: solid 0.2rem $color-secondary-dark;
         }
       }
     }

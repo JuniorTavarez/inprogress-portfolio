@@ -1,5 +1,8 @@
 #my-latest-work {
   padding: 10rem 0;
+  @include responsive(phone) {
+    padding: $padding 0;
+  }
   .heading {
     h2 {
       font-size: $h1;

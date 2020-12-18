@@ -2,8 +2,12 @@
   background-color: $color-primary-dark;
   color: $color-primary;
   padding: 10rem 0;
+
   @include responsive(tab-mid) {
     padding: 10rem 0 1rem;
+  }
+  @include responsive(phone) {
+    padding-top: $padding;
   }
   .wrapper {
     display: flex;
@@ -24,9 +28,12 @@
       .paragraph {
         p {
           font-size: $p;
-          margin: 0.5rem 0;
+
+          &:not(:last-child) {
+            margin: 1.5rem 0;
+          }
           &:nth-last-child(1) {
-            margin-top: 2.5rem;
+            margin: 1rem 0;
             font-size: $h2;
             // background-color: yellow;
           }
@@ -79,14 +86,14 @@
         margin: 1rem 0;
         font-size: $p;
         @include responsive(tab-mid) {
-          margin: 0rem;
+          // margin: 0rem;
         }
       }
     }
   }
   .last {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     @include responsive(tab-mid) {
       margin-top: 4rem;
     }

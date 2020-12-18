@@ -1,6 +1,9 @@
 #who-am-i {
   background: $color-primary-light;
   padding: 10rem 0;
+  @include responsive(phone) {
+    padding: $padding 0;
+  }
 
   .wrapper {
     display: flex;
