@@ -15,6 +15,74 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes slide {
+  0% {
+    transform: translateX(-200%); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes slide-right {
+  0% {
+    transform: translate(100%, 0px); }
+  100% {
+    transform: translate(0px, 0px); } }
+
+@keyframes slide-small {
+  0% {
+    transform: translate(10%, 0px); }
+  100% {
+    transform: translate(0px, 0px); } }
+
+@keyframes see-saw {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg); }
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg); }
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg); }
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg); }
+  100% {
+    transform: rotate3d(0, 0, 1, 0deg); } }
+
+@keyframes move-up {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 300px); }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px); } }
+
+.left-side-slide {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+  transition: transform 0.5s ease-in-out, opacity 2s ease-in-out !important; }
+
+.right-side-slide {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+  transition: transform 0.5s ease-in-out, opacity 2s ease-in-out !important; }
+
+.move-up {
+  transform: translateY(0) !important;
+  transition: transform 0.5s ease-in-out, opacity 1s ease-in-out !important;
+  opacity: 1 !important; }
+
+.fade {
+  transition: opacity 1s ease-in-out !important;
+  opacity: 1 !important;
+  margin: 2rem 0 0.3rem 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 23.5%;
+  border: 0.1rem solid #e7e7e7; }
+
 *,
 *::after,
 *::before {
@@ -26,7 +94,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 ::selection {
   background-color: #f7f7f7;
@@ -39,7 +108,7 @@ body {
   color: #777; }
 
 .container {
-  max-width: 60%;
+  max-width: 110rem;
   margin: 0 auto; }
   @media only screen and (max-width: 75em) {
     .container {
@@ -105,7 +174,8 @@ body {
         padding: 1.3rem 2.5rem 0 0; } }
   #header .nav-bar .nav .main-nav {
     display: flex;
-    padding: 1.5rem 2.5rem; }
+    padding: 1.5rem 2.5rem;
+    animation: fade 2s ease-in-out none, slide-small 1.5s ease-in-out none; }
     @media only screen and (max-width: 56.25em) {
       #header .nav-bar .nav .main-nav {
         padding: 1.5rem 1.5rem 1.5rem 0;
@@ -179,7 +249,8 @@ body {
       #header .hero-section .wrapper {
         margin-bottom: 2rem; } }
     #header .hero-section .wrapper .left-side {
-      flex: 0 1 45%; }
+      flex: 0 1 45%;
+      animation: fade 3s ease-in-out none; }
       @media only screen and (max-width: 75em) {
         #header .hero-section .wrapper .left-side {
           flex: 0 1 51%; } }
@@ -224,6 +295,7 @@ body {
             max-width: 100%;
             font-size: 1.6rem; } }
   #header .hero-section .right-side {
+    animation: fade 3s ease-in-out none;
     flex: 0 1 45%;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 1.5rem;
@@ -263,7 +335,8 @@ body {
             padding: 0.2rem 6rem; } }
   #header .hero-section .fa-chevron-down {
     color: #f7f7f7;
-    font-size: 3rem; }
+    font-size: 5rem;
+    animation: see-saw 1s ease-in-out 1 1.2s; }
 
 #who-am-i {
   background: #e7e7e7;
@@ -281,7 +354,10 @@ body {
         align-items: center; } }
     #who-am-i .wrapper .left-side {
       flex: 0 1 50%;
-      margin-right: 1rem; }
+      margin-right: 1rem;
+      transform: translateX(-200%);
+      transition: transform 0.5s ease-in-out, opacity 2s ease-in-out;
+      opacity: 0; }
       #who-am-i .wrapper .left-side h2 {
         font-size: 3rem;
         border-bottom: 0.1rem solid #fff;
@@ -335,7 +411,10 @@ body {
       border: 0.5rem #0a1b26 solid;
       flex: 0 1 50%;
       border-radius: 1rem;
-      max-width: 100%; }
+      max-width: 100%;
+      transform: translateX(200%);
+      transition: transform 0.5s ease-in-out, opacity 2s ease-in-out;
+      opacity: 0; }
       @media only screen and (max-width: 56.25em) {
         #who-am-i .wrapper .right-side {
           border: none; } }
@@ -347,33 +426,34 @@ body {
   @media only screen and (max-width: 37.5em) {
     #my-latest-work {
       padding: 6rem 0; } }
-  #my-latest-work .heading h2 {
-    font-size: 3rem;
-    border-bottom: 0.1rem solid #000;
-    max-width: 32rem;
-    font-weight: 100;
-    color: #484848; }
-    @media only screen and (max-width: 37.5em) {
-      #my-latest-work .heading h2 {
-        margin: 0 auto;
-        text-align: center; } }
-  #my-latest-work .heading p {
-    margin-top: 1rem;
-    font-size: 1.8rem;
-    color: #484848; }
-    @media only screen and (max-width: 37.5em) {
-      #my-latest-work .heading p {
-        text-align: center; } }
+  #my-latest-work .heading {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.2s ease-in-out; }
+    #my-latest-work .heading h2 {
+      font-size: 3rem;
+      border-bottom: 0.1rem solid #000;
+      max-width: 32rem;
+      font-weight: 100;
+      color: #484848; }
+      @media only screen and (max-width: 37.5em) {
+        #my-latest-work .heading h2 {
+          margin: 0 auto;
+          text-align: center; } }
+    #my-latest-work .heading p {
+      margin-top: 1rem;
+      font-size: 1.8rem;
+      color: #484848; }
+      @media only screen and (max-width: 37.5em) {
+        #my-latest-work .heading p {
+          text-align: center; } }
   #my-latest-work .row-1 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap; }
     #my-latest-work .row-1 .card-1 {
-      margin: 2rem 0 0.3rem 0;
-      display: flex;
-      flex-direction: column;
-      max-width: 23.5%;
-      border: 0.1rem solid #e7e7e7; }
+      transition: opacity 1s ease-in-out;
+      opacity: 0; }
       @media only screen and (max-width: 56.25em) {
         #my-latest-work .row-1 .card-1 {
           max-width: 48%; } }

@@ -25,7 +25,7 @@
       .main-nav {
         display: flex;
         padding: 1.5rem 2.5rem;
-
+        animation: fade 2s ease-in-out none, slide-small 1.5s ease-in-out none;
         @include responsive(tab-mid) {
           padding: 1.5rem 1.5rem 1.5rem 0;
           font-size: 1.2rem;
@@ -124,6 +124,8 @@
       }
       .left-side {
         flex: 0 1 45%;
+        animation: fade 3s ease-in-out none;
+
         @include responsive(tab-land) {
           flex: 0 1 51%;
         }
@@ -179,6 +181,7 @@
       }
     }
     .right-side {
+      animation: fade 3s ease-in-out none;
       flex: 0 1 45%;
       background-color: rgba($color-black, 0.5);
       padding: 1.5rem;
@@ -231,7 +234,8 @@
     }
     .fa-chevron-down {
       color: $color-primary;
-      font-size: $h1;
+      font-size: 5rem;
+      animation: see-saw 1s ease-in-out 1 1.2s;
     }
   }
 }
