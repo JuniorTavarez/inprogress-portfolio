@@ -36,6 +36,11 @@
     .card-1 {
       transition: opacity 1s ease-in-out;
       opacity: 0;
+      margin: 2rem 0 0.3rem 0;
+      display: flex;
+      flex-direction: column;
+      max-width: 23.5%;
+      border: 0.1rem solid $color-primary-light;
 
       @include responsive(tab-mid) {
         max-width: 48%;
