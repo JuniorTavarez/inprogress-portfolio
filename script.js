@@ -12,7 +12,7 @@ window.addEventListener('mouseup', function (e) {
   }
 });
 
-// testimonial animation
+// testimonial
 
 const testimonials = document.querySelectorAll('.testimonials');
 const buttons = document.querySelectorAll('.bullets');
@@ -22,6 +22,7 @@ testimonialFunction();
 
 function testimonialFunction() {
   for (let i = 0; i < testimonials.length; i++) {
+    testimonials[i].classList.remove('right-side-slide');
     testimonials[i].classList.add('u-display-none');
     buttons[i].classList.remove('u-grow-bullet');
   }
@@ -31,7 +32,7 @@ function testimonialFunction() {
   }
 
   testimonials[num].classList.remove('u-display-none');
-
+  testimonials[num].classList.add('right-side-slide');
   buttons[num].classList.add('u-grow-bullet');
 
   num++;
@@ -51,9 +52,13 @@ const rightSide = document.querySelector('#who-am-i .wrapper .right-side');
 
 // My latest work
 const workHeading = document.querySelector('#my-latest-work .heading');
+const cards = document.querySelectorAll('#my-latest-work .card-1');
 
-const cards = document.querySelectorAll('.card-1');
+// why work with me
+const workWithMe = document.querySelector('#why-work-with-me .top');
+const card = document.querySelectorAll('#why-work-with-me .card');
 
+// Event Listener scroll
 window.addEventListener('scroll', checkBoxes);
 
 function checkBoxes() {
@@ -61,21 +66,21 @@ function checkBoxes() {
 
   const boxTop = leftSide.getBoundingClientRect().top;
 
-  const boxWorkHeading = workHeading.getBoundingClientRect().top;
-
   // Who AM I
   if (boxTop < triggerBottom) {
     leftSide.classList.add('left-side-slide');
     rightSide.classList.add('right-side-slide');
   } else {
     leftSide.classList.remove('left-side-slide');
-
     rightSide.classList.remove('right-side-slide');
   }
   // My latest work H2 and P
   // if (workHeading.classList.contains('move-up')) {
   //   console.log('heyyy');
   // }
+
+  const boxWorkHeading = workHeading.getBoundingClientRect().top;
+
   if (boxWorkHeading < triggerBottom) {
     workHeading.classList.add('move-up');
   } else {
@@ -83,6 +88,23 @@ function checkBoxes() {
   }
 
   cards.forEach((card) => {
+    const boxCard = card.getBoundingClientRect().top;
+    if (boxCard < triggerBottom) {
+      card.classList.add('fade');
+    } else {
+      card.classList.remove('fade');
+    }
+  });
+
+  // work with me
+  const boxWorkWithMe = workWithMe.getBoundingClientRect().top;
+  if (boxWorkWithMe < triggerBottom) {
+    workWithMe.classList.add('move-up');
+  } else {
+    workWithMe.classList.remove('move-up');
+  }
+
+  card.forEach((card) => {
     const boxCard = card.getBoundingClientRect().top;
     if (boxCard < triggerBottom) {
       card.classList.add('fade');

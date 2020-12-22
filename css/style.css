@@ -59,12 +59,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
     opacity: 1;
     transform: translate(0px, 0px); } }
 
+.right-side-slide,
 .left-side-slide {
-  transform: translateX(0) !important;
-  opacity: 1 !important;
-  transition: transform 0.5s ease-in-out, opacity 2s ease-in-out !important; }
-
-.right-side-slide {
   transform: translateX(0) !important;
   opacity: 1 !important;
   transition: transform 0.5s ease-in-out, opacity 2s ease-in-out !important; }
@@ -350,7 +346,7 @@ body {
     #who-am-i .wrapper .left-side {
       flex: 0 1 50%;
       margin-right: 1rem;
-      transform: translateX(-10%);
+      transform: translateX(-5vw);
       transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
       opacity: 0; }
       #who-am-i .wrapper .left-side h2 {
@@ -407,7 +403,7 @@ body {
       flex: 0 1 50%;
       border-radius: 1rem;
       max-width: 100%;
-      transform: translateX(10%);
+      transform: translateX(5vw);
       transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
       opacity: 0; }
       @media only screen and (max-width: 56.25em) {
@@ -596,7 +592,10 @@ body {
     flex-direction: column;
     align-items: center; }
     #why-work-with-me .wrapper .top {
-      text-align: center; }
+      text-align: center;
+      transform: translateY(4vh);
+      opacity: 0;
+      transition: transform 0.5s ease-in-out, opacity 0.2s ease-in-out; }
       #why-work-with-me .wrapper .top h2 {
         max-width: 32rem;
         font-size: 3rem;
@@ -624,7 +623,9 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center; }
+        text-align: center;
+        transition: opacity 1s ease-in-out;
+        opacity: 0; }
         @media only screen and (max-width: 56.25em) {
           #why-work-with-me .wrapper .info-section .card {
             margin: 2rem 0;
@@ -751,11 +752,15 @@ body {
         #testimonials .wrapper .content {
           border-left: none;
           padding-left: none; } }
-      #testimonials .wrapper .content .paragraph p {
-        font-size: 1.6rem; }
-      #testimonials .wrapper .content .paragraph .name {
-        margin-top: 0.5rem;
-        display: block; }
+      #testimonials .wrapper .content .paragraph {
+        transform: translateX(20vw);
+        opacity: 0;
+        transition: transform 0.5s ease-in-out, opacity 2s ease-in-out; }
+        #testimonials .wrapper .content .paragraph p {
+          font-size: 1.6rem; }
+        #testimonials .wrapper .content .paragraph .name {
+          margin-top: 0.5rem;
+          display: block; }
     #testimonials .wrapper #bullets {
       display: flex;
       align-items: center;
