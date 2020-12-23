@@ -16,14 +16,16 @@ window.addEventListener('mouseup', function (e) {
 
 const testimonials = document.querySelectorAll('.testimonials');
 const buttons = document.querySelectorAll('.bullets');
+const content = document.querySelector('#testimonials .content');
 
 let num = 0;
 testimonialFunction();
 
 function testimonialFunction() {
   for (let i = 0; i < testimonials.length; i++) {
-    testimonials[i].classList.remove('right-side-slide');
+    testimonials[i].classList.remove('new-slide');
     testimonials[i].classList.add('u-display-none');
+
     buttons[i].classList.remove('u-grow-bullet');
   }
 
@@ -32,7 +34,8 @@ function testimonialFunction() {
   }
 
   testimonials[num].classList.remove('u-display-none');
-  testimonials[num].classList.add('right-side-slide');
+  // testimonials[num].style.display = 'block';
+  testimonials[num].classList.add('new-slide');
   buttons[num].classList.add('u-grow-bullet');
 
   num++;

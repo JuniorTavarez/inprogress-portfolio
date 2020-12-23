@@ -59,6 +59,14 @@ ORDER: Base + typography > general layout + grid > page layout > components
     opacity: 1;
     transform: translate(0px, 0px); } }
 
+@keyframes left-side-slide {
+  0% {
+    opacity: 0;
+    transform: translate3d(-20vw, 0, 0); }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); } }
+
 .right-side-slide,
 .left-side-slide {
   transform: translateX(0) !important;
@@ -73,6 +81,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .fade {
   transition: opacity 1s ease-in-out !important;
   opacity: 1 !important; }
+
+.new-slide {
+  animation: left-side-slide 1s ease-in-out forwards; }
 
 *,
 *::after,
@@ -741,10 +752,8 @@ body {
         margin-top: 1rem;
         font-size: 1.8rem; }
     #testimonials .wrapper .content {
-      border-left: 0.1rem black solid;
       margin-top: 2rem;
       flex: 1 1 100%;
-      padding-left: 2rem;
       text-align: center;
       display: flex;
       justify-content: center; }
@@ -752,15 +761,11 @@ body {
         #testimonials .wrapper .content {
           border-left: none;
           padding-left: none; } }
-      #testimonials .wrapper .content .paragraph {
-        transform: translateX(20vw);
-        opacity: 0;
-        transition: transform 0.5s ease-in-out, opacity 2s ease-in-out; }
-        #testimonials .wrapper .content .paragraph p {
-          font-size: 1.6rem; }
-        #testimonials .wrapper .content .paragraph .name {
-          margin-top: 0.5rem;
-          display: block; }
+      #testimonials .wrapper .content .paragraph p {
+        font-size: 1.6rem; }
+      #testimonials .wrapper .content .paragraph .name {
+        margin-top: 0.5rem;
+        display: block; }
     #testimonials .wrapper #bullets {
       display: flex;
       align-items: center;

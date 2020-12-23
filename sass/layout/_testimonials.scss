@@ -28,25 +28,17 @@
       }
     }
     .content {
-      border-left: 0.1rem black solid;
       margin-top: 2rem;
       flex: 1 1 100%;
-      padding-left: 2rem;
       text-align: center;
       display: flex;
       justify-content: center;
-      // transform: translateX(-20vw);
-      // opacity: 0;
-      // transition: transform 0.5s ease-in-out, opacity 2s ease-in-out;
 
       @include responsive(tab-land) {
         border-left: none;
         padding-left: none;
       }
       .paragraph {
-        transform: translateX(20vw);
-        opacity: 0;
-        transition: transform 0.5s ease-in-out, opacity 2s ease-in-out;
         p {
           font-size: $p;
         }

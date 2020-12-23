@@ -63,6 +63,17 @@
     transform: translate(0px, 0px);
   }
 }
+@keyframes left-side-slide {
+  0% {
+    opacity: 0;
+    transform: translate3d(-20vw, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 
 .right-side-slide,
 .left-side-slide {
@@ -79,4 +90,8 @@
 .fade {
   transition: opacity 1s ease-in-out !important;
   opacity: 1 !important;
+}
+
+.new-slide {
+  animation: left-side-slide 1s ease-in-out forwards;
 }
