@@ -14,6 +14,10 @@
     flex: 0 0 100%;
     text-align: center;
     margin: 0 auto 2rem;
+
+    transform: translateX(-5vw);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.7s ease-in-out;
   }
   .wrapper {
     display: flex;
@@ -30,6 +34,10 @@
       padding-left: 1rem;
       padding-right: 3rem;
       font-size: $p;
+
+      transform: translateX(-5vw);
+      opacity: 0;
+      transition: transform 0.5s ease-in-out, opacity 0.7s ease-in-out;
       @include responsive(tab-land) {
         padding: 0 1rem 0;
       }
@@ -43,7 +51,9 @@
       flex: 0 1 40%;
       display: flex;
       flex-direction: column;
-
+      transform: translateX(5vw);
+      opacity: 0;
+      transition: transform 0.5s ease-in-out, opacity 0.7s ease-in-out;
       @include responsive(tab-mid) {
         margin-top: 2rem;
       }

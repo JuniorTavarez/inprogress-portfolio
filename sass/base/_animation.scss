@@ -76,10 +76,17 @@
 }
 
 .right-side-slide,
-.left-side-slide {
+.left-side-slide,
+.side-slide {
   transform: translateX(0) !important;
   opacity: 1 !important;
-  transition: transform 0.5s ease-in-out, opacity 2s ease-in-out !important;
+  transition: transform 1s ease-in-out, opacity 0.5s ease-in-out !important;
+}
+
+.side-slide2 {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+  transition: transform 0.7s ease-in-out, opacity 0.3s ease-in-out !important;
 }
 
 .move-up {
