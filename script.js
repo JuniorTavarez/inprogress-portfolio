@@ -14,8 +14,8 @@ window.addEventListener('mouseup', function (e) {
 
 // testimonial
 
-const testimonials = document.querySelectorAll('.testimonials');
-const buttons = document.querySelectorAll('.bullets');
+const testimonials = document.querySelectorAll('#testimonials .testimonials');
+const buttons = document.querySelectorAll('#testimonials .bullets');
 const content = document.querySelector('#testimonials .content');
 
 let num = 0;
@@ -60,6 +60,10 @@ const cards = document.querySelectorAll('#my-latest-work .card-1');
 // why work with me
 const workWithMe = document.querySelector('#why-work-with-me .top');
 const card = document.querySelectorAll('#why-work-with-me .card');
+
+// testimonials
+
+const testimonialWrapper = document.querySelector('#testimonials .wrapper');
 
 // Event Listener scroll
 window.addEventListener('scroll', checkBoxes);
@@ -115,4 +119,11 @@ function checkBoxes() {
       card.classList.remove('fade');
     }
   });
+  // testimonials
+  const boxTestimonialWrapper = testimonialWrapper.getBoundingClientRect().top;
+  if (boxTestimonialWrapper < triggerBottom) {
+    testimonialWrapper.classList.add('zoom-in');
+  } else {
+    testimonialWrapper.classList.remove('zoom-in');
+  }
 }

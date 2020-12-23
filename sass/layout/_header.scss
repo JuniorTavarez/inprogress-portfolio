@@ -145,17 +145,20 @@
         }
         h1 {
           color: $color-white;
-          font-size: $h2;
+          font-size: 2.8rem;
           font-weight: 400;
 
           @include responsive(tab-land) {
             font-size: 2.2rem;
           }
+          @include responsive(tab-mid) {
+            font-size: 3.1rem;
+          }
           @include responsive(phone) {
             text-align: center;
-            line-height: 2.5rem;
+            line-height: 3rem;
             margin: 1rem 0 0.5rem;
-            font-size: $h2;
+            font-size: 2.6rem;
           }
         }
         p {

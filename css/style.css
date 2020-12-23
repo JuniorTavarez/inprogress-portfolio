@@ -85,6 +85,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
 .new-slide {
   animation: left-side-slide 1s ease-in-out forwards; }
 
+.zoom-in {
+  transition: transform 1s ease-in-out, opacity 0.5s ease-in-out !important;
+  transform: scale3d(1, 1, 1) !important;
+  opacity: 1 !important; }
+
 *,
 *::after,
 *::before {
@@ -270,17 +275,20 @@ body {
             max-width: 100%; } }
       #header .hero-section .wrapper .left-side h1 {
         color: #fff;
-        font-size: 1.8rem;
+        font-size: 2.8rem;
         font-weight: 400; }
         @media only screen and (max-width: 75em) {
           #header .hero-section .wrapper .left-side h1 {
             font-size: 2.2rem; } }
+        @media only screen and (max-width: 56.25em) {
+          #header .hero-section .wrapper .left-side h1 {
+            font-size: 3.1rem; } }
         @media only screen and (max-width: 37.5em) {
           #header .hero-section .wrapper .left-side h1 {
             text-align: center;
-            line-height: 2.5rem;
+            line-height: 3rem;
             margin: 1rem 0 0.5rem;
-            font-size: 1.8rem; } }
+            font-size: 2.6rem; } }
       #header .hero-section .wrapper .left-side p {
         color: #fff;
         font-size: 1.6rem;
@@ -734,7 +742,10 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+    transform: scale3d(0.03, 0.03, 0.03);
+    opacity: 1; }
     #testimonials .wrapper .top {
       flex: 1 1 100%;
       justify-content: center;
