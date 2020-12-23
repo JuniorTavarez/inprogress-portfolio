@@ -1,5 +1,17 @@
+.container-top {
+  max-width: 120rem;
+  margin: 0 auto;
+  // 1200px
+  @include responsive(tab-land) {
+    max-width: 85%;
+  }
+  // 1000px
+  @include responsive(tab-mid) {
+    max-width: 90%;
+  }
+}
 .container {
-  max-width: 110rem;
+  max-width: 60%;
   margin: 0 auto;
   // 1200px
   @include responsive(tab-land) {

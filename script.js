@@ -65,6 +65,10 @@ const card = document.querySelectorAll('#why-work-with-me .card');
 
 const testimonialWrapper = document.querySelector('#testimonials .wrapper');
 
+// Footer
+const footer = document.querySelector('#footer .wrapper');
+const footerLast = document.querySelector('#footer .last');
+
 // Event Listener scroll
 window.addEventListener('scroll', checkBoxes);
 
@@ -125,5 +129,15 @@ function checkBoxes() {
     testimonialWrapper.classList.add('zoom-in');
   } else {
     testimonialWrapper.classList.remove('zoom-in');
+  }
+
+  // Footer
+  const boxFooter = footer.getBoundingClientRect().top;
+  if (boxFooter < triggerBottom) {
+    footer.classList.add('move-up');
+    footerLast.classList.add('move-up');
+  } else {
+    footer.classList.remove('move-up');
+    footerLast.classList.remove('move-up');
   }
 }

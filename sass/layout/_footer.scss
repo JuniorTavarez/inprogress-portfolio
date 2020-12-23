@@ -12,6 +12,9 @@
   .wrapper {
     display: flex;
     justify-content: space-between;
+    transform: translateY(4vh);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.2s ease-in-out;
     @include responsive(tab-mid) {
       flex-direction: column;
     }
@@ -69,8 +72,9 @@
       }
     }
     .right-side {
-      flex: 0 1 25%;
-      margin-left: 1rem;
+      flex: 0 1 auto;
+      margin-left: 2rem;
+
       @include responsive(tab-mid) {
         flex: 1 1 100%;
         text-align: center;
@@ -94,6 +98,10 @@
   .last {
     text-align: center;
     font-size: 1.4rem;
+    transform: translateY(4vh);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.2s ease-in-out;
+
     @include responsive(tab-mid) {
       margin-top: 4rem;
     }
